@@ -2,7 +2,8 @@
 
 int main(){
 
-	cout << "Balls.";
+	cout << "Work.";
+
 
 	system("PAUSE");
 
