@@ -4,7 +4,7 @@ int main(){
 
 	cout << "Work.";
 
-	cout << "No.";
+	cout << "Yes.";
 
 	system("PAUSE");
 
