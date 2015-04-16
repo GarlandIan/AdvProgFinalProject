@@ -1,3 +1,6 @@
+#ifndef NPC_H
+#define NPC_H
+
 #include "pc.h"
 
 class NPC : protected Character
@@ -10,3 +13,5 @@ class NPC : protected Character
 		//setter
 
 };
+
+#endif
