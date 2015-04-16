@@ -1,4 +1,4 @@
-#include"character.h"
+#include"npc.h"
 
 int main(){
 

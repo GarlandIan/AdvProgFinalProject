@@ -1,4 +1,4 @@
-#include "character.h"
+#include "pc.h"
 
 class NPC : protected Character
 {

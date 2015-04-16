@@ -1,6 +1,6 @@
 
 
-#include "character.h"//change?
+#include "armor.h"//change?
 
 class PC : protected Character
 {
