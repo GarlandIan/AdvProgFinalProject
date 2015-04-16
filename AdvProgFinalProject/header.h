@@ -1,9 +1,8 @@
-/*
-#ifndef
-#define
 
-#endif
-*/
+#ifndef HEADER_H
+#define HEADER_H
+
+
 
 #include <iostream>
 #include <ctime>
@@ -37,6 +36,12 @@ int generateLoot(); //exclusive to DM
 //functions under new character
 int rollStats();
 
+//Options Menus
+void startingMenu();
+void ingameMenu();
+void outsideMenu();
+void DMmenu();
+
 int roll()
 {
 	srand(time(NULL));
@@ -47,3 +52,5 @@ int roll()
 	rand()*roll + 1;
 
 }
+
+#endif
