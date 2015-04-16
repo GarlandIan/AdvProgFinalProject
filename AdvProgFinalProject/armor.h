@@ -1,6 +1,8 @@
 #ifndef ARMOR_H
 #define ARMOR_H
 
+#include"weapon.h"
+
 struct Armor
 {
 	string enchant;

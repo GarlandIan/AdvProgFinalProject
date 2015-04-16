@@ -32,5 +32,17 @@
     <ClInclude Include="character.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="armor.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="npc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="weapon.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

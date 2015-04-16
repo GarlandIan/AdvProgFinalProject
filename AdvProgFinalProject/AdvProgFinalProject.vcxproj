@@ -69,8 +69,12 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="armor.h" />
     <ClInclude Include="character.h" />
     <ClInclude Include="header.h" />
+    <ClInclude Include="npc.h" />
+    <ClInclude Include="pc.h" />
+    <ClInclude Include="weapon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
