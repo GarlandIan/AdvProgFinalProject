@@ -1,0 +1,58 @@
+Player Name
+Level 1
+Warrior 1
+Neutral Neutral
+
+Str 10
+Dex 10
+Con 10
+Int 10
+Wis 10
+Cha 10
+
+HP 5
+AC 10
+
+Speed 20
+
+Initiative 0
+
+Fortitude 0
+Reflex 0
+Will 0
+
+Acrobatics 0
+Appraise 0
+Bluff 0
+Climb 0
+Craft 0
+Diplomacy 0
+Disable Device 0
+Diguise 0
+Escape Artist 0
+Fly 0
+Handle Animal 0
+Heal 0
+Intimidate 0
+K Arcana 0
+K Dungeoneering 0
+K Engingeering 0
+K Geography 0
+K History 0
+K Local 0
+K Nature 0
+K Nobility 0
+K Planes 0
+K Religion 0
+Linguistics 0
+Perception 0
+Perform 0
+Profession 0
+Ride 0
+Sense Motive 0
+Sleight of Hand 0
+Spellcraft 0
+Stealth 0
+Survival 0
+Swim 0
+Use Magic Device 0
