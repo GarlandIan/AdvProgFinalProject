@@ -1,91 +1,114 @@
 #include"character.h"
 
-void setAScores(int scores[]){
+void Character::setAScores(int scores[]){
 
-
-
-}
-
-void setAClass(int ac){
-
-
-
-}
-
-void setSpeed(int s){
-
-
+	abilScores[0] = scores[0];
+	abilScores[1] = scores[1];
+	abilScores[2] = scores[2];
+	abilScores[3] = scores[3];
+	abilScores[4] = scores[4];
+	abilScores[5] = scores[5];
 
 }
 
-void setHP(int h){
+void Character::setAlignment(int al){
 
-
-
-}
-
-void setSaves(int sa[]){
-
-
+	alignment = al;
 
 }
 
-void setSkills(double skills[]){
+void Character::setAClass(int ac){
 
-
-
-}
-
-void setName(string n){
-
-
+	armorClass = ac;
 
 }
 
-int getAScores(){
+void Character::setSpeed(int s){
 
-
-
-}
-
-int getAClass(){
-
-
+	speed = s;
 
 }
 
-int getSpeed(){
+void Character::setHP(int h){
 
-
-
-}
-
-int getHP(){
-
-
+	hp = h;
 
 }
 
-int getInit(){
+void Character::setSaves(int sa[]){
 
-
-
-}
-
-int getSaves(){
-
-
+	saves[0] = sa[0];
+	saves[1] = sa[1];
+	saves[2] = sa[2];
 
 }
 
-double getSkills(){
+void Character::setSkills(double skillStats[]){
 
-
+	for (int i = 0; i < skillSize; i++)
+		skills[i] = skillStats[i];
 
 }
 
-string getName(){
+void Character::setName(string n){
 
+	name = n;
 
+}
+
+int Character::getAScores(){
+	
+	for (int i = 0; i < 6; i++)
+		return abilScores[i];
+
+}
+
+int Character::getAClass(){
+
+	return armorClass;
+
+}
+
+int Character::getAlignment(){
+
+	return alignment;
+
+}
+
+int Character::getSpeed(){
+
+	return speed;
+
+}
+
+int Character::getHP(){
+
+	return hp;
+
+}
+
+int Character::getInit(){
+
+	return initiative;
+
+}
+
+int Character::getSaves(){
+
+	for (int i = 0; i < 3; i++)
+		return saves[i];
+
+}
+
+double Character::getSkills(){
+
+	for (int i = 0; i < skillSize; i++)
+		return skills[i];
+
+}
+
+string Character::getName(){
+
+	return name;
 
 }

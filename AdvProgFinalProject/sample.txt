@@ -1,7 +1,7 @@
 Player Name
 Level 1
 Warrior 1
-Neutral Neutral
+Alignment 3
 
 Str 10
 Dex 10

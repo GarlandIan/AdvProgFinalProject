@@ -5,6 +5,7 @@ class Character
 {
 	protected:
 		int abilScores[6];//make const
+		int alignment;
 		int armorClass;
 		int speed;
 		int hp;
@@ -15,11 +16,12 @@ class Character
 
 	public:
 		Character();
-		Character(int abil[], int armorC, int s, int hp, int init, int saves[], double skills[], string name);
+		Character(int abil[], int armorC, int al, int s, int hp, int init, int saves[], double skills[], string name);
 		Character(const Character &c);
 		~Character();
 
 		void setAScores(int scores[]);
+		void setAlignment(int al);
 		void setAClass(int ac);
 		void setSpeed(int s);
 		void setHP(int h);
@@ -29,6 +31,7 @@ class Character
 		void setName(string n);
 
 		int getAScores();
+		int getAlignment();
 		int getAClass();
 		int getSpeed();
 		int getHP();

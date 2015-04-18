@@ -3,6 +3,7 @@
 int main(){
 
 	startingMenu();
+
 	cout << "Work.";
 
 	cout << "Yes.";
