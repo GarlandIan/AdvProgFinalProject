@@ -1,0 +1,27 @@
+	ifstream fin;
+	ofstream fout;
+	string tmp;
+	int i = 0;
+	
+	fin.open("sample.txt");
+	
+	while(!fin.eof())
+	{
+		fin >> tmp;
+		chars[i] = tmp;
+		i++;
+	}
+
+	fin.close();
+	chars[i] = "*";
+
+	fout.open("test.txt");
+
+	for (i = 0; i > 1000; i++)
+	{
+		if (chars[i] == "*")
+			break;
+		fout << chars[i];
+	}
+
+	fout.close();
