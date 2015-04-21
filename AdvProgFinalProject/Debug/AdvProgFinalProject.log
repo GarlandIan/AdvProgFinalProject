@@ -1,32 +1,26 @@
-﻿Build started 4/21/2015 2:34:15 PM.
+﻿Build started 4/21/2015 3:02:58 PM.
      1>Project "C:\Users\Ian\Desktop\AdvProgFinalProject\AdvProgFinalProject\AdvProgFinalProject.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt character.cpp functions.cpp main.cpp pc.cpp
          pc.cpp
          main.cpp
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(43): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(48): warning C4552: '+' : operator has no effect; expected operator with side-effect
+     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(40): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(45): warning C4552: '+' : operator has no effect; expected operator with side-effect
          functions.cpp
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(43): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(48): warning C4552: '+' : operator has no effect; expected operator with side-effect
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(73): error C2247: 'Character::setName' not accessible because 'PC' uses 'protected' to inherit from 'Character'
+     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(40): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(45): warning C4552: '+' : operator has no effect; expected operator with side-effect
+     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(73): error C2248: 'Character::setName' : cannot access protected member declared in class 'Character'
                  c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\character.h(31) : see declaration of 'Character::setName'
-                 c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\pc.h(6) : see declaration of 'PC'
                  c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\character.h(4) : see declaration of 'Character'
                  c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\character.h(31) : see declaration of 'Character::setName'
-                 c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\pc.h(6) : see declaration of 'PC'
                  c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\character.h(4) : see declaration of 'Character'
                  c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\character.h(31) : see declaration of 'Character::setName'
-                 c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\pc.h(6) : see declaration of 'PC'
                  c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\character.h(4) : see declaration of 'Character'
                  c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\character.h(31) : see declaration of 'Character::setName'
-                 c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\pc.h(6) : see declaration of 'PC'
                  c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\character.h(4) : see declaration of 'Character'
                  c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\character.h(31) : see declaration of 'Character::setName'
-                 c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\pc.h(6) : see declaration of 'PC'
                  c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\character.h(4) : see declaration of 'Character'
                  c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\character.h(31) : see declaration of 'Character::setName'
-                 c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\pc.h(6) : see declaration of 'PC'
                  c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\character.h(4) : see declaration of 'Character'
      1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(73): error C2679: binary '>>' : no operator found which takes a right-hand operand of type 'overloaded-function' (or there is no acceptable conversion)
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\istream(485): could be 'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(std::basic_streambuf<char,std::char_traits<char>> *)'
@@ -47,12 +41,13 @@
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\istream(204): or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))'
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\istream(198): or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(std::basic_istream<char,std::char_traits<char>> &(__cdecl *)(std::basic_istream<char,std::char_traits<char>> &))'
          character.cpp
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\character.cpp(48): error C2065: 'skillSize' : undeclared identifier
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\character.cpp(106): error C2065: 'skillSize' : undeclared identifier
          Generating Code...
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(50): error C4716: 'roll' : must return a value
+     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\character.cpp(65): warning C4715: 'Character::getAScores' : not all control paths return a value
+     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\character.cpp(102): warning C4715: 'Character::getSaves' : not all control paths return a value
+     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\character.cpp(109): warning C4715: 'Character::getSkills' : not all control paths return a value
+     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(47): error C4716: 'roll' : must return a value
      1>Done Building Project "C:\Users\Ian\Desktop\AdvProgFinalProject\AdvProgFinalProject\AdvProgFinalProject.vcxproj" (Rebuild target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:01.39
+Time Elapsed 00:00:01.53

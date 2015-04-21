@@ -2,7 +2,7 @@
 
 class Character
 {
-	protected:
+	private:
 		int abilScores[6];//make const
 		int alignment;
 		int armorClass;
@@ -14,7 +14,7 @@ class Character
 		string name;
 		string playerClass;
 
-	public:
+	protected:
 		Character();
 		Character(int abil[], int armorC, int al, int s, int hp, int init, int saves[], double skills[], string name);
 		Character(const Character &c);
