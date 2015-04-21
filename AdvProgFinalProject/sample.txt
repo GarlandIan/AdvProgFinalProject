@@ -1,6 +1,6 @@
 Player Name
 Level 1
-Warrior 1
+Warrior
 Alignment 3
 
 Str 10
@@ -56,3 +56,13 @@ Stealth 0
 Survival 0
 Swim 0
 Use Magic Device 0
+
+Armor
+Leather
+AC 1
+ArmorCheckPen 0
+MaxDex 5
+Speed 30
+Weight 20
+Enchantment None
+Info ------
