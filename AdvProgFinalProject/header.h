@@ -35,9 +35,6 @@ void ingameMenu();
 void outsideMenu();
 void DMmenu();
 
-const int aScoreSize = 6;
-const int skillSize = 35;
-
 int roll()
 {
 	srand(time(NULL));
