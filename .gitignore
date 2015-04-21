@@ -19,6 +19,7 @@ $RECYCLE.BIN/
 
 *.opensdf
 *.sdf
+*.suo
 
 # =========================
 # Operating System Files
