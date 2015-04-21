@@ -14,6 +14,6 @@ struct Armor
 	int speed;
 	int weight;
 	double spellFailCh;
-}
+};
 
 #endif
