@@ -5,7 +5,7 @@ makeDefault()
 	int num = 10;
 	int num2 = 0;
 
-fout << "Player Name: " << tmp << endl //no variable name yet
+fout << "Player Name: " << tmp << endl //character.getName()
      << "Level: " << "1" << endl //pc.getLevel()
      << "Class: " << "Warrior" << endl//pc.getPClass()
      << "Alignment:" <<  "3" << endl// character.getAlignment()
@@ -24,7 +24,7 @@ fout << "Player Name: " << tmp << endl //no variable name yet
      << endl
      << "Initiative: " << num2 << endl// character.getInit()
      << endl
-     << "Fortitude: " << num2 << endl// character.get???(int num) for next 3.
+     << "Fortitude: " << num2 << endl// character.getSaves(int num) for next 3.
      << "Reflex: " << num2 << endl
      << "Will: " << num2 << endl
      << endl
