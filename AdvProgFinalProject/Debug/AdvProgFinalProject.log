@@ -1,4 +1,4 @@
-﻿Build started 4/21/2015 1:00:05 PM.
+﻿Build started 4/21/2015 1:33:00 PM.
      1>Project "C:\Users\Ian\Desktop\AdvProgFinalProject\AdvProgFinalProject\AdvProgFinalProject.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt character.cpp functions.cpp main.cpp pc.cpp
@@ -9,11 +9,6 @@
      1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(27): error C2059: syntax error : ')'
      1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(48): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
      1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(53): warning C4552: '+' : operator has no effect; expected operator with side-effect
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\armor.h(6): error C2236: unexpected token 'struct'. Did you forget a ';'?
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\armor.h(7): error C2143: syntax error : missing ';' before '{'
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\armor.h(7): error C2447: '{' : missing function header (old-style formal list?)
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\pc.h(13): error C2146: syntax error : missing ';' before identifier 'armor'
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\pc.h(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
          main.cpp
      1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(27): error C2065: 'PC' : undeclared identifier
      1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(27): error C2146: syntax error : missing ')' before identifier 'pc'
@@ -21,11 +16,6 @@
      1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(27): error C2059: syntax error : ')'
      1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(48): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
      1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(53): warning C4552: '+' : operator has no effect; expected operator with side-effect
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\armor.h(6): error C2236: unexpected token 'struct'. Did you forget a ';'?
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\armor.h(7): error C2143: syntax error : missing ';' before '{'
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\armor.h(7): error C2447: '{' : missing function header (old-style formal list?)
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\pc.h(13): error C2146: syntax error : missing ';' before identifier 'armor'
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\pc.h(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
      1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\main.cpp(7): error C2064: term does not evaluate to a function taking 1 arguments
          functions.cpp
      1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(27): error C2065: 'PC' : undeclared identifier
@@ -34,11 +24,6 @@
      1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(27): error C2059: syntax error : ')'
      1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(48): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
      1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(53): warning C4552: '+' : operator has no effect; expected operator with side-effect
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\armor.h(6): error C2236: unexpected token 'struct'. Did you forget a ';'?
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\armor.h(7): error C2143: syntax error : missing ';' before '{'
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\armor.h(7): error C2447: '{' : missing function header (old-style formal list?)
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\pc.h(13): error C2146: syntax error : missing ';' before identifier 'armor'
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\pc.h(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
      1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(67): error C2365: 'loadCharacter' : redefinition; previous definition was 'data variable'
                  c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(27) : see declaration of 'loadCharacter'
      1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(73): error C2247: 'Character::setName' not accessible because 'PC' uses 'protected' to inherit from 'Character'
@@ -90,4 +75,4 @@
 
 Build FAILED.
 
-Time Elapsed 00:00:01.10
+Time Elapsed 00:00:01.15

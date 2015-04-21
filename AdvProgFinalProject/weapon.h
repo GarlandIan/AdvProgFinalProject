@@ -13,6 +13,6 @@ struct Weapon
 	int critType;
 	int range;
 	int weight;
-}
+};
 
 #endif
