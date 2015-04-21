@@ -2,6 +2,10 @@
 
 int main(){
 
+	PC testPlayer;
+
+	loadCharacter(testPlayer);
+
 	startingMenu();
 
 	cout << "Work.";

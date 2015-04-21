@@ -56,6 +56,7 @@ void Character::setName(string n){
 
 }
 
+
 int Character::getAScores(){
 	
 	for (int i = 0; i < 6; i++)

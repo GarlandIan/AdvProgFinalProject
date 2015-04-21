@@ -63,3 +63,17 @@ void outsideMenu()
 	}
 
 }
+
+void loadCharacter(PC pc){
+
+	ifstream file;
+
+	file.open("sample.txt");
+
+	file >> pc.setName;
+
+	cout << pc.getName;
+
+	system("PAUSE");
+	
+}

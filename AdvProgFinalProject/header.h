@@ -4,6 +4,7 @@
 #include <iostream>
 #include <ctime>
 #include <string>
+#include <fstream>
 
 using namespace std; 
 
@@ -23,7 +24,7 @@ int equip();
 
 //outside of play
 int changeCharacter();
-int loadChatacter();
+void loadCharacter(PC pc);
 int newCharacter();
 int deleteCharacter();
 int searchMonsters(); //exclusive to DM
