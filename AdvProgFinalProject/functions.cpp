@@ -1,4 +1,4 @@
-#include"npc.h"
+#include"header.h"
 
 void startingMenu()
 {

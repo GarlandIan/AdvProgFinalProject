@@ -47,5 +47,8 @@
     <ClInclude Include="weapon.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="root.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -75,6 +75,7 @@
     <ClInclude Include="header.h" />
     <ClInclude Include="npc.h" />
     <ClInclude Include="pc.h" />
+    <ClInclude Include="root.h" />
     <ClInclude Include="weapon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

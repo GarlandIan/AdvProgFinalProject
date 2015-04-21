@@ -1,12 +1,7 @@
 #ifndef HEADER_H
 #define HEADER_H
 
-#include <iostream>
-#include <ctime>
-#include <string>
-#include <fstream>
-
-using namespace std; 
+#include"npc.h"
 
 //functions all defualt to int atm////////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
