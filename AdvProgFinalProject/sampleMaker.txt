@@ -1,0 +1,77 @@
+makeDefault()
+{
+	ofstream fout;
+	string tmp = "IAN";
+	int num = 10;
+	int num2 = 0;
+
+fout << "Player Name: " << tmp << endl //no variable name yet
+     << "Level: " << "1" << endl //pc.getLevel()
+     << "Class: " << "Warrior" << endl//pc.getPClass()
+     << "Alignment:" <<  "3" << endl// character.getAlignment()
+     << endl
+     << "Str: " << num << endl// character.getAScores(int num) for next six.
+     << "Dex: " << num << endl
+     << "Con: " << num << endl
+     << "Int: " << num << endl
+     << "Wis: " << num << endl
+     << "Cha: " << num << endl
+     << endl
+     << "HP: " << "5" << endl// character.getHP()
+     << "AC: " << num << endl// character.getACLass()
+     << endl
+     << "Speed: " << "20" << endl// character.getSpeed()
+     << endl
+     << "Initiative: " << num2 << endl// character.getInit()
+     << endl
+     << "Fortitude: " << num2 << endl// character.get???(int num) for next 3.
+     << "Reflex: " << num2 << endl
+     << "Will: " << num2 << endl
+     << endl
+     << "Acrobatics: " << num2 << endl// character.getSkills(int num) for next 35.
+     << "Appraise: " << num2 << endl
+     << "Bluff: " << num2 << endl
+     << "Climb: " << num2 << endl
+     << "Craft: " << num2 << endl
+     << "Diplomacy: " << num2 << endl
+     << "Disable Device: " << num2 << endl
+     << "Disguise: " << num2 << endl
+     << "Escape Artist: " << num2 << endl
+     << "Fly: " << num2 << endl
+     << "Handle Animal: " << num2 << endl
+     << "Heal: " << num2 << endl
+     << "Intimidate: " << num2 << endl
+     << "K Arcana: " << num2 << endl
+     << "K Dungeoneering: " << num2 << endl
+     << "K Engingeering: " << num2 << endl
+     << "K Geography: " << num2 << endl
+     << "K History: " << num2 << endl
+     << "K Local: " << num2 << endl
+     << "K Nature: " << num2 << endl
+     << "K Nobility: " << num2 << endl
+     << "K Planes: " << num2 << endl
+     << "K Religion: " << num2 << endl
+     << "Linguistics: " << num2 << endl
+     << "Perception: " << num2 << endl
+     << "Perform: " << num2 << endl
+     << "Profession: " << num2 << endl
+     << "Ride: " << num2 << endl
+     << "Sense Motive: " << num2 << endl
+     << "Sleight of Hand: " << num2 << endl
+     << "Spellcraft: " << num2 << endl
+     << "Stealth: " << num2 << endl
+     << "Survival: " << num2 << endl
+     << "Swim: " << num2 << endl
+     << "Use Magic Device: " << num2 << endl 
+     << endl
+     << "Armor" << endl
+     << "Leather << endl// armor.type
+     << "AC: " << "1" << endl //armor.acBonus
+     << "ArmorCheckPen: " << num2 << endl //armor.acPenalty
+     << "MaxDex: " << "5" << endl //armor.mDexBonus
+     << "Speed: " << "30" << endl //armor.speed
+     << "Weight: " << "20" << endl //armor.weight
+     << "Enchantment: " << "none" << endl //armor.enchant
+     << "Enchantment Info: " << "-----" << endl //armor.enchantInfo
+}
+
