@@ -23,3 +23,8 @@ int PC::getLevel(){
 	return level;
 
 }
+
+istream& operator>>(istream& is, PC item){
+		is >> item.setName;
+		return is;
+}

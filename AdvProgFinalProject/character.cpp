@@ -57,10 +57,9 @@ void Character::setName(string n){
 }
 
 
-int Character::getAScores(){
+int* Character::getAScores(){
 	
-	for (int i = 0; i < 6; i++)
-		return abilScores[i];
+		return abilScores;
 
 }
 
@@ -94,17 +93,15 @@ int Character::getInit(){
 
 }
 
-int Character::getSaves(){
+int* Character::getSaves(){
 
-	for (int i = 0; i < 3; i++)
-		return saves[i];
+		return saves;
 
 }
 
-double Character::getSkills(){
+double* Character::getSkills(){
 
-	for (int i = 0; i < skillSize; i++)
-		return skills[i];
+		return skills;
 
 }
 

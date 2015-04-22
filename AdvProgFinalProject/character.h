@@ -14,7 +14,7 @@ class Character
 		string name;
 		string playerClass;
 
-	protected:
+	public:
 		Character();
 		Character(int abil[], int armorC, int al, int s, int hp, int init, int saves[], double skills[], string name);
 		Character(const Character &c);
@@ -31,14 +31,14 @@ class Character
 		void setName(string n);
 		void setPClass(string pc);
 
-		int getAScores();
+		int* getAScores();
 		int getAlignment();
 		int getAClass();
 		int getSpeed();
 		int getHP();
 		int getInit();
-		int getSaves();
-		double getSkills();
+		int* getSaves();
+		double* getSkills();
 		string getName();
 		string getPClass();
 };

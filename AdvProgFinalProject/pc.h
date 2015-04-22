@@ -3,7 +3,7 @@
 
 #include "armor.h"//change?
 
-class PC : protected Character
+class PC : public Character
 {
 private:
 	int level;
@@ -23,6 +23,8 @@ public:
 
 	string getPClass();
 	int getLevel();
+
+	friend istream& operator>>(istream& is, PC item);
 
 };
  

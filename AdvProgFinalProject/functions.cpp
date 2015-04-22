@@ -68,9 +68,13 @@ void loadCharacter(PC pc){
 
 	ifstream file;
 
+	string tmp;
+
 	file.open("sample.txt");
 
-	file >> pc.setName;
+	file >> tmp;
+
+	tmp >> pc.getName;
 
 	cout << pc.getName;
 

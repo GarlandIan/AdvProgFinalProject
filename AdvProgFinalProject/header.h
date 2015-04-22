@@ -39,11 +39,12 @@ int roll()
 {
 	srand(time(NULL));
 
-	int roll;
+	int roll, result;
 	cout << "which dice are you rolling ? (type in number : ie d20 = 20)" << endl;
 		cin >> roll;
-	rand()*roll + 1;
+	result = rand()*roll + 1;
 
+	return result;
 }
 
 #endif
