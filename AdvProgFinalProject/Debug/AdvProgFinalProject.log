@@ -1,4 +1,4 @@
-﻿Build started 4/22/2015 3:12:39 AM.
+﻿Build started 4/22/2015 3:44:13 AM.
      1>Project "C:\Users\Ian\Desktop\AdvProgFinalProject\AdvProgFinalProject\AdvProgFinalProject.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt character.cpp functions.cpp main.cpp pc.cpp
@@ -24,17 +24,16 @@
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\istream(198): or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(std::basic_istream<char,std::char_traits<char>> &(__cdecl *)(std::basic_istream<char,std::char_traits<char>> &))'
                  c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\pc.h(27): or       'std::istream &operator >>(std::istream &,PC)'
          main.cpp
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(40): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
          functions.cpp
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\header.h(40): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
      1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(77): error C2678: binary '>>' : no operator found which takes a left-hand operand of type 'std::string' (or there is no acceptable conversion)
                  c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\pc.h(27): could be 'std::istream &operator >>(std::istream &,PC)'
                  while trying to match the argument list '(std::string, overloaded-function)'
      1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(79): error C3867: 'Character::getName': function call missing argument list; use '&Character::getName' to create a pointer to member
+     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(96): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
          character.cpp
          Generating Code...
      1>Done Building Project "C:\Users\Ian\Desktop\AdvProgFinalProject\AdvProgFinalProject\AdvProgFinalProject.vcxproj" (Rebuild target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:01.50
+Time Elapsed 00:00:01.45

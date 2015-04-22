@@ -20,6 +20,7 @@ int equip();
 //outside of play
 int changeCharacter();
 void loadCharacter(PC pc);
+void buildDefault();
 int newCharacter();
 int deleteCharacter();
 int searchMonsters(); //exclusive to DM
@@ -35,16 +36,6 @@ void ingameMenu();
 void outsideMenu();
 void DMmenu();
 
-int roll()
-{
-	srand(time(NULL));
-
-	int roll, result;
-	cout << "which dice are you rolling ? (type in number : ie d20 = 20)" << endl;
-		cin >> roll;
-	result = rand()*roll + 1;
-
-	return result;
-}
+int roll(int diceNumber);
 
 #endif

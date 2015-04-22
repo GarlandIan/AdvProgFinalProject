@@ -5,7 +5,7 @@ makeDefault()
 	int num = 10;
 	int num2 = 0;
 
-fout << "Player Name: " << tmp << endl //character.getName()
+fout << "PlayerName: " << tmp << endl //character.getName()
      << "Level: " << "1" << endl //pc.getLevel()
      << "Class: " << "Warrior" << endl//pc.getPClass()
      << "Alignment:" <<  "3" << endl// character.getAlignment()
@@ -41,28 +41,28 @@ fout << "Player Name: " << tmp << endl //character.getName()
      << "Handle Animal: " << num2 << endl
      << "Heal: " << num2 << endl
      << "Intimidate: " << num2 << endl
-     << "K Arcana: " << num2 << endl
-     << "K Dungeoneering: " << num2 << endl
-     << "K Engingeering: " << num2 << endl
-     << "K Geography: " << num2 << endl
-     << "K History: " << num2 << endl
-     << "K Local: " << num2 << endl
-     << "K Nature: " << num2 << endl
-     << "K Nobility: " << num2 << endl
-     << "K Planes: " << num2 << endl
-     << "K Religion: " << num2 << endl
+     << "KArcana: " << num2 << endl
+     << "KDungeoneering: " << num2 << endl
+     << "KEngingeering: " << num2 << endl
+     << "KGeography: " << num2 << endl
+     << "KHistory: " << num2 << endl
+     << "KLocal: " << num2 << endl
+     << "KNature: " << num2 << endl
+     << "KNobility: " << num2 << endl
+     << "KPlanes: " << num2 << endl
+     << "KReligion: " << num2 << endl
      << "Linguistics: " << num2 << endl
      << "Perception: " << num2 << endl
      << "Perform: " << num2 << endl
      << "Profession: " << num2 << endl
      << "Ride: " << num2 << endl
-     << "Sense Motive: " << num2 << endl
-     << "Sleight of Hand: " << num2 << endl
+     << "SenseMotive: " << num2 << endl
+     << "SleightofHand: " << num2 << endl
      << "Spellcraft: " << num2 << endl
      << "Stealth: " << num2 << endl
      << "Survival: " << num2 << endl
      << "Swim: " << num2 << endl
-     << "Use Magic Device: " << num2 << endl 
+     << "UseMagicDevice: " << num2 << endl 
      << endl
      << "Armor" << endl
      << "Leather << endl// armor.type
@@ -72,6 +72,6 @@ fout << "Player Name: " << tmp << endl //character.getName()
      << "Speed: " << "30" << endl //armor.speed
      << "Weight: " << "20" << endl //armor.weight
      << "Enchantment: " << "none" << endl //armor.enchant
-     << "Enchantment Info: " << "-----" << endl //armor.enchantInfo
+     << "EnchantmentInfo: " << "-----" << endl //armor.enchantInfo
 }
 
