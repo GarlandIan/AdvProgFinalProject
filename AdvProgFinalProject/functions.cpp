@@ -74,9 +74,9 @@ void loadCharacter(PC pc){
 
 	file >> tmp;
 
-	tmp >> pc.getName;
+	pc.setName(tmp);
 
-	cout << pc.getName;
+	cout << pc.getName();
 
 	system("PAUSE");
 	
@@ -91,7 +91,7 @@ int roll(int diceNumber)
 
 
 
-int main()
+void generateLoot()
 {
 	srand(time(NULL));
 	int num, num2, num3, monsterlvl = /*rand() % 30 +*/ 1, diceNumber = 0, total;//monster level to be imported in
@@ -1057,13 +1057,7 @@ int main()
 		cout << "You found " << gold << " gold on the corpse" << endl;
 	}
 
-
-
-
-
-
 	system("pause");
-	return 0;
 }
 
 void buildDefault(){

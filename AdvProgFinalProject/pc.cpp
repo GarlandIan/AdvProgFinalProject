@@ -24,7 +24,9 @@ int PC::getLevel(){
 
 }
 
-istream& operator>>(istream& is, PC item){
-		is >> item.setName;
+/*istream& operator>>(istream& is, PC item){
+		string in;
+		is >> in;
+		item.setName(in);
 		return is;
-}
+}*/

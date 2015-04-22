@@ -1,39 +1,26 @@
-﻿Build started 4/22/2015 3:44:13 AM.
+﻿Build started 4/22/2015 2:01:59 PM.
      1>Project "C:\Users\Ian\Desktop\AdvProgFinalProject\AdvProgFinalProject\AdvProgFinalProject.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt character.cpp functions.cpp main.cpp pc.cpp
          pc.cpp
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\pc.cpp(28): error C3867: 'Character::setName': function call missing argument list; use '&Character::setName' to create a pointer to member
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\pc.cpp(28): error C2679: binary '>>' : no operator found which takes a right-hand operand of type 'overloaded-function' (or there is no acceptable conversion)
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\istream(485): could be 'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(std::basic_streambuf<char,std::char_traits<char>> *)'
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\istream(466): or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(void *&)'
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\istream(448): or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(long double &)'
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\istream(430): or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(double &)'
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\istream(411): or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(float &)'
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\istream(392): or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(unsigned __int64 &)'
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\istream(373): or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(__int64 &)'
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\istream(353): or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(unsigned long &)'
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\istream(335): or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(long &)'
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\istream(317): or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(unsigned int &)'
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\istream(291): or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(int &)'
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\istream(272): or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(unsigned short &)'
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\istream(237): or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(short &)'
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\istream(218): or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(std::_Bool &)'
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\istream(211): or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(std::ios_base &(__cdecl *)(std::ios_base &))'
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\istream(204): or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))'
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\istream(198): or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(std::basic_istream<char,std::char_traits<char>> &(__cdecl *)(std::basic_istream<char,std::char_traits<char>> &))'
-                 c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\pc.h(27): or       'std::istream &operator >>(std::istream &,PC)'
          main.cpp
          functions.cpp
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(77): error C2678: binary '>>' : no operator found which takes a left-hand operand of type 'std::string' (or there is no acceptable conversion)
-                 c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\pc.h(27): could be 'std::istream &operator >>(std::istream &,PC)'
-                 while trying to match the argument list '(std::string, overloaded-function)'
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(79): error C3867: 'Character::getName': function call missing argument list; use '&Character::getName' to create a pointer to member
      1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(96): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
          character.cpp
          Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.lib" /MACHINE:X86 Debug\character.obj
+         Debug\functions.obj
+         Debug\main.obj
+         Debug\pc.obj
+     1>functions.obj : error LNK2019: unresolved external symbol "public: __thiscall PC::~PC(void)" (??1PC@@QAE@XZ) referenced in function "void __cdecl loadCharacter(class PC)" (?loadCharacter@@YAXVPC@@@Z)
+     1>main.obj : error LNK2001: unresolved external symbol "public: __thiscall PC::~PC(void)" (??1PC@@QAE@XZ)
+     1>functions.obj : error LNK2019: unresolved external symbol "void __cdecl DMmenu(void)" (?DMmenu@@YAXXZ) referenced in function "void __cdecl startingMenu(void)" (?startingMenu@@YAXXZ)
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall PC::PC(void)" (??0PC@@QAE@XZ) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall PC::PC(class PC const &)" (??0PC@@QAE@ABV0@@Z) referenced in function _main
+     1>C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.exe : fatal error LNK1120: 4 unresolved externals
      1>Done Building Project "C:\Users\Ian\Desktop\AdvProgFinalProject\AdvProgFinalProject\AdvProgFinalProject.vcxproj" (Rebuild target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:01.45
+Time Elapsed 00:00:01.67

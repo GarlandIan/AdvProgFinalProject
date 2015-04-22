@@ -25,7 +25,7 @@ int newCharacter();
 int deleteCharacter();
 int searchMonsters(); //exclusive to DM
 int playAsMonster(); //exclusive to DM
-int generateLoot(); //exclusive to DM
+void generateLoot(); //exclusive to DM
 
 //functions under new character
 int rollStats();

@@ -24,7 +24,7 @@ public:
 	string getPClass();
 	int getLevel();
 
-	friend istream& operator>>(istream& is, PC item);
+	//friend istream& operator >> (istream& is, PC item);
 
 };
  
