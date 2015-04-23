@@ -79,6 +79,9 @@
     <ClInclude Include="root.h" />
     <ClInclude Include="weapon.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="sample.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

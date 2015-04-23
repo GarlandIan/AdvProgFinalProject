@@ -26,7 +26,22 @@ Certification of Authenticity:
 //Post: 
 //Cite: 
 //Author: 
-Character::Character(){}
+Character::Character(){
+	for (int i = 0; i < 6; i++){
+		abilScores[i] = 0;
+		abilMod[i] = 0;
+	}
+	alignment = 0;
+	armorClass = 0;
+	speed = 0;
+	hp = 0;
+	initiative = 0;
+	for (int j = 0; j < 3; j++)
+		saves[j] = 0;
+	for (int k = 0; k< 3; k++)
+		skills[k] = 0;
+	name = "";
+}
 
 //Purpose: 
 //Pre: 

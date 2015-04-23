@@ -311,11 +311,9 @@ void loadCharacter(PC pc){
 //Author: 
 void initiativeCheck(PC pc)
 { 
-	int tmp, dice = 20;
-	cout << "hi" << pc.getInit() << " " << roll(20) << "goodbye" << endl;
-	tmp = pc.getInit() + roll(dice);
-
-	cout << tmp << endl;
+	cout << "Checking initiative . . .\n";
+	cout << "You rolled a " << pc.getInit() + roll(20) << endl;
+	system("pause");
 }
 
 //Purpose: 
@@ -405,7 +403,6 @@ int rollStats(){
 int roll(int diceNumber)
 {
 	srand(time(NULL));
-	cout << "dice\n";
 	int dice = rand() % diceNumber;
 	dice += 1;
 	return dice;
