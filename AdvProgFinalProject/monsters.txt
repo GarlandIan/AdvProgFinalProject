@@ -1,5 +1,6 @@
 Giant Frog
 CR 1
+Alignment 5
 
 Str 15
 Dex 13
@@ -57,6 +58,7 @@ Use Magic Device 0
 
 Doppelganger
 CR 3
+Alignment 5
 
 Str 18
 Dex 13
@@ -114,6 +116,7 @@ Use Magic Device 0
 
 Kirin
 CR 7
+Alignment 1
 
 Str 20
 Dex 23
