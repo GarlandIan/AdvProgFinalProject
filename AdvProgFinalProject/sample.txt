@@ -34,28 +34,28 @@ Fly 0
 Handle Animal 0
 Heal 0
 Intimidate 0
-K Arcana 0
-K Dungeoneering 0
-K Engingeering 0
-K Geography 0
-K History 0
-K Local 0
-K Nature 0
-K Nobility 0
-K Planes 0
-K Religion 0
+kArcana 0
+kDungeoneering 0
+kEngingeering 0
+kGeography 0
+kHistory 0
+kLocal 0
+kNature 0
+kNobility 0
+kPlanes 0
+kReligion 0
 Linguistics 0
 Perception 0
 Perform 0
 Profession 0
 Ride 0
-Sense Motive 0
-Sleight of Hand 0
+SenseMotive 0
+SleightOfHand 0
 Spellcraft 0
 Stealth 0
 Survival 0
 Swim 0
-Use Magic Device 0
+UseMagicDevice 0
 
 Armor
 Leather
