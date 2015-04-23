@@ -1,0 +1,170 @@
+Giant Frog
+CR 1
+
+Str 15
+Dex 13
+Con 16
+Int 1
+Wis 8
+Cha 6
+
+HP 15
+AC 12
+
+Speed 30
+
+Initiative 1
+
+Fortitude 6
+Reflex 6
+Will -1
+
+Acrobatics 9
+Appraise 0
+Bluff 0
+Climb 0
+Craft 0
+Diplomacy 0
+Disable Device 0
+Diguise 0
+Escape Artist 0
+Fly 0
+Handle Animal 0
+Heal 0
+Intimidate 0
+K Arcana 0
+K Dungeoneering 0
+K Engingeering 0
+K Geography 0
+K History 0
+K Local 0
+K Nature 0
+K Nobility 0
+K Planes 0
+K Religion 0
+Linguistics 0
+Perception 3
+Perform 0
+Profession 0
+Ride 0
+Sense Motive 0
+Sleight of Hand 0
+Spellcraft 0
+Stealth 5
+Survival 0
+Swim 10
+Use Magic Device 0
+
+Doppelganger
+CR 3
+
+Str 18
+Dex 13
+Con 12
+Int 13
+Wis 14
+Cha 13
+
+HP 26
+AC 16
+
+Speed 30
+
+Initiative 1
+
+Fortitude 4
+Reflex 5
+Will 6
+
+Acrobatics 0
+Appraise 0
+Bluff 9
+Climb 0
+Craft 0
+Diplomacy 4
+Disable Device 0
+Diguise 9
+Escape Artist 0
+Fly 0
+Handle Animal 0
+Heal 0
+Intimidate 0
+K Arcana 0
+K Dungeoneering 0
+K Engingeering 0
+K Geography 0
+K History 0
+K Local 0
+K Nature 0
+K Nobility 0
+K Planes 0
+K Religion 0
+Linguistics 0
+Perception 9
+Perform 0
+Profession 0
+Ride 0
+Sense Motive 6
+Sleight of Hand 0
+Spellcraft 0
+Stealth 5
+Survival 0
+Swim 0
+Use Magic Device 0
+
+Kirin
+CR 7
+
+Str 20
+Dex 23
+Con 18
+Int 18
+Wis 21
+Cha 23
+
+HP 85
+AC 20
+
+Speed 60
+
+Initiative 6
+
+Fortitude 10
+Reflex 12
+Will 10
+
+Acrobatics 0
+Appraise 0
+Bluff 0
+Climb 0
+Craft 0
+Diplomacy 15
+Disable Device 0
+Diguise 9
+Escape Artist 0
+Fly 20
+Handle Animal 0
+Heal 0
+Intimidate 0
+K Arcana 0
+K Dungeoneering 0
+K Engingeering 0
+K Geography 0
+K History 13
+K Local 0
+K Nature 0
+K Nobility 0
+K Planes 0
+K Religion 0
+Linguistics 0
+Perception 17
+Perform 15
+Profession 0
+Ride 0
+Sense Motive 14
+Sleight of Hand 0
+Spellcraft 0
+Stealth 0
+Survival 0
+Swim 0
+Use Magic Device 0
