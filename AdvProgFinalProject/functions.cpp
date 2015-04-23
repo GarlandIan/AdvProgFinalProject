@@ -121,14 +121,20 @@ void DMmenu()
 	if (user_choice3 == 1)
 	{
 		searchMonsters();
+		system("pause");
+		DMmenu();
 	}
 	if (user_choice3 == 2)
 	{
 		playAsMonster();
+		system("pause");
+		DMmenu();
 	}
 	if (user_choice3 == 3)
 	{
 		generateLoot();
+		system("pause");
+		DMmenu();
 	}
 }
 
@@ -160,25 +166,40 @@ void playMenu(PC testPlayer)
 	if (user_choice4 == 1)
 	{
 		initiativeCheck(testPlayer);
+		system("pause");
+		playMenu(testPlayer);
 	}
 	if (user_choice4 == 2)
 	{
 		attack(testPlayer);
+		system("pause");
+		playMenu(testPlayer);
 	}
 	if (user_choice4 == 3)
 	{
 		manageHealth(testPlayer);
+		system("pause");
+		playMenu(testPlayer);
 	}
 	if (user_choice4 == 4)
 	{
 		rollSaves(testPlayer);
+		system("pause");
+		playMenu(testPlayer);
 	}
 	if (user_choice4 == 5)
 	{
 		rollSkills(testPlayer);
+		system("pause");
+		playMenu(testPlayer);
 	}
 }
 
+//Purpose: 
+//Pre: 
+//Post: 
+//Cite: 
+//Author: 
 void manageMenu(PC testPlayer)
 {
 	int user_choice5 = -1;
@@ -202,22 +223,32 @@ void manageMenu(PC testPlayer)
 	if (user_choice5 == 1)
 	{
 		changeCharacter(testPlayer);
+		system("pause");
+		manageMenu(testPlayer);
 	}
 	if (user_choice5 == 2)
 	{
 		loadCharacter(testPlayer);
+		system("pause");
+		manageMenu(testPlayer);
 	}
 	if (user_choice5 == 3)
 	{
 		buildDefault();
+		system("pause");
+		manageMenu(testPlayer);
 	}
 	if (user_choice5 == 4)
 	{
 		newCharacter(testPlayer);
+		system("pause");
+		manageMenu(testPlayer);
 	}
 	if (user_choice5 == 5)
 	{
 		deleteCharacter();
+		system("pause");
+		manageMenu(testPlayer);
 	}
 }
 
