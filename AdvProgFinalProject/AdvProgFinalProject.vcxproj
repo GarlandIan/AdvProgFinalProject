@@ -67,6 +67,7 @@
     <ClCompile Include="character.cpp" />
     <ClCompile Include="functions.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="npc.cpp" />
     <ClCompile Include="pc.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -27,7 +27,6 @@ Character::Character(const Character &c)
 	saves[3] = c.saves[3];
 	skills[35] = c.skills[35];
 	name = c.name;
-	playerClass = c.playerClass;
 
 }
 

@@ -12,7 +12,6 @@ class Character
 		int saves[3];
 		double skills[35];//make const
 		string name;
-		string playerClass;
 
 	public:
 		Character();
@@ -29,7 +28,6 @@ class Character
 		void setSaves(int sa[]);
 		void setSkills(double skills[]);
 		void setName(string n);
-		void setPClass(string pc);
 
 		int* getAScores();
 		int getAlignment();
@@ -40,5 +38,4 @@ class Character
 		int* getSaves();
 		double* getSkills();
 		string getName();
-		string getPClass();
 };

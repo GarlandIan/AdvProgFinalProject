@@ -9,8 +9,14 @@ class NPC : protected Character
 		int CR;
 
 	public:
-		//getter
-		//setter
+		NPC();
+		NPC(int c);
+		NPC(const NPC &n);
+		~NPC();
+
+		int getCR();
+
+		void setCR(int c);
 
 };
 
