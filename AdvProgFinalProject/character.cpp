@@ -154,6 +154,17 @@ void Character::setHP(int h){
 //Post: 
 //Cite: 
 //Author: 
+void Character::setInit(int i){
+
+	initiative = i;
+
+}
+
+//Purpose: 
+//Pre: 
+//Post: 
+//Cite: 
+//Author: 
 void Character::setSaves(int sa[]){
 
 	saves[0] = sa[0];

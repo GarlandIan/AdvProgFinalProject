@@ -24,6 +24,12 @@ Certification of Authenticity:
 int main(){
 
 	PC testPlayer;
+	int init = 2;
+	testPlayer.setInit(init);
+	cout << testPlayer.getInit() << "*******\n";
+
+	initiativeCheck(testPlayer);
+	system("pause");
 
 	loadCharacter(testPlayer);
 
