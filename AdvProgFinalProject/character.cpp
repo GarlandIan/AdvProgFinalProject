@@ -2,9 +2,12 @@
 
 Character::Character(){}
 
-Character::Character(int abil[], int armorC, int al, int s, int hp, int init, int saves[], double skills[], string name)
+Character::Character(int abil[], int abilM[], int armorC, int al, int s, int hp, int init, int saves[], double skills[], string name)
 {
-	abilScores[6] = abil[6];
+	for (int i = 0; i < 6; i++){
+		abilScores[i] = abil[i];
+		abilMod[i] = abilM[i];
+	}
 	armorClass = armorC;
 	alignment = al;
 	speed = s;
@@ -18,7 +21,11 @@ Character::Character(int abil[], int armorC, int al, int s, int hp, int init, in
 
 Character::Character(const Character &c)
 {
-	abilScores[6] = c.abilScores[6];
+
+	for (int i = 0; i < 6; i++){
+		abilScores[i] = c.abilScores[i];
+		abilMod[i] = c.abilMod[i];
+	}
 	alignment = c.alignment;
 	armorClass = c.armorClass;
 	speed = c.speed;
@@ -34,12 +41,16 @@ Character::~Character(){}
 
 void Character::setAScores(int scores[]){
 
-	abilScores[0] = scores[0];
-	abilScores[1] = scores[1];
-	abilScores[2] = scores[2];
-	abilScores[3] = scores[3];
-	abilScores[4] = scores[4];
-	abilScores[5] = scores[5];
+	for (int i = 0; i < 6; i++){
+		abilScores[i] = scores[i];
+	}
+
+}
+
+void Character::setAMods(int amods[]){
+	for (int i = 0; i < 6; i++){
+		abilMod[i] = amods[i];
+	}
 
 }
 
@@ -92,6 +103,12 @@ void Character::setName(string n){
 int Character::getAScores(int i){
 	
 		return abilScores[i];
+
+}
+
+int Character::getAMods(int i){
+
+	return abilMod[i];
 
 }
 
