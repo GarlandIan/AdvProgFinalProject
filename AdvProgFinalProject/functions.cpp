@@ -43,7 +43,7 @@ void outsideMenu()
 	int user_choice2 = -1;
 	while (user_choice2 < 0 || user_choice2 > 2)
 	{
-		cout << "Please select whether you are a player or the Dungeon Master\n";
+		cout << "Player: What would you like to do?\n";
 		cout << "0 - Back to Starting Menu\n";
 		cout << "1 - ...\n";
 		cout << "2 - ...\n";
@@ -51,17 +51,43 @@ void outsideMenu()
 	}
 	if (user_choice2 == 0)
 	{
-
+		cout << "Returning to starting menu.\n";
+		system("pause");
 	}
 	if (user_choice2 == 1)
 	{
-		
+
 	}
 	if (user_choice2 == 2)
 	{
-		
-	}
 
+	}
+}
+
+void DMmenu()
+{
+	int user_choice3 = -1;
+	while (user_choice3 < 0 || user_choice3 > 2)
+	{
+		cout << "Dungeon Master: What would you like to do?\n";
+		cout << "0 - Back to Starting Menu\n";
+		cout << "1 - ...\n";
+		cout << "2 - ...\n";
+		cin >> user_choice3;
+	}
+	if (user_choice3 == 0)
+	{
+		cout << "Returning to starting menu.\n";
+		system("pause");
+	}
+	if (user_choice3 == 1)
+	{
+
+	}
+	if (user_choice3 == 2)
+	{
+
+	}
 }
 
 void loadCharacter(PC pc){
