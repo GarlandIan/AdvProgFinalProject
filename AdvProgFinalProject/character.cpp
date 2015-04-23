@@ -89,9 +89,9 @@ void Character::setName(string n){
 }
 
 
-int* Character::getAScores(){
+int Character::getAScores(int i){
 	
-		return abilScores;
+		return abilScores[i];
 
 }
 

@@ -218,7 +218,8 @@ void loadCharacter(PC pc){
 
 	pc.setAScores(ascoresTemp);
 
-	cout << pc.getAScores();
+	//for (int k = 0; k < 6; k++)
+	//	cout << pc.getAScores(k);
 
 	system("PAUSE");
 

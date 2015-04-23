@@ -29,7 +29,7 @@ class Character
 		void setSkills(double skills[]);
 		void setName(string n);
 
-		int* getAScores();
+		int getAScores(int i);
 		int getAlignment();
 		int getAClass();
 		int getSpeed();

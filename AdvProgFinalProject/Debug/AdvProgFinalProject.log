@@ -1,4 +1,4 @@
-﻿Build started 4/23/2015 2:30:13 AM.
+﻿Build started 4/23/2015 11:03:47 AM.
      1>Project "C:\Users\Ian\Desktop\AdvProgFinalProject\AdvProgFinalProject\AdvProgFinalProject.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt character.cpp functions.cpp main.cpp npc.cpp pc.cpp
@@ -6,7 +6,7 @@
          npc.cpp
          main.cpp
          functions.cpp
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(270): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(271): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
          character.cpp
          Generating Code...
        Link:
@@ -20,4 +20,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.24
+Time Elapsed 00:00:02.26
