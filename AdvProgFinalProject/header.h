@@ -5,19 +5,19 @@
 
 //functions all defualt to int atm////////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-int operations();
-//in play mode Commands
+void operations(); //can choose to 'play' or 'manage'; options in each mode are shown below
+//in play mode Commands all activated through a play command
 int initiativeCheck();
 int attack();
 int receiveAttack();
 int manageHealth();
-int castSpell();
+//int castSpell(); //Not enough time to implement
 int rollSaves();
 int rollSkills();
 int use();
 int equip();
 
-//outside of play
+//outside of play activated through a manage command
 int changeCharacter();
 void loadCharacter(PC pc);
 void buildDefault();
