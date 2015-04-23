@@ -6,7 +6,7 @@ int main(){
 
 	loadCharacter(testPlayer);
 
-	startingMenu();
+	startingMenu(testPlayer);
 
 	cout << "Work.";
 

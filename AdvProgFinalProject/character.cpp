@@ -1,5 +1,7 @@
 #include"character.h"
 
+Character::~Character(){}
+
 void Character::setAScores(int scores[]){
 
 	abilScores[0] = scores[0];

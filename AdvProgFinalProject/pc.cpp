@@ -1,5 +1,14 @@
 #include"pc.h"
 
+PC::PC(){}
+
+PC::PC(const PC &pc){
+	pc.level = pc.level;
+
+}
+
+PC::~PC(){}
+
 void PC::setPClass(string pc){
 
 	playerClass = pc;

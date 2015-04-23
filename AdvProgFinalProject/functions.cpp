@@ -1,6 +1,6 @@
 #include"header.h"
 
-void startingMenu()
+void startingMenu(PC testPlayer)
 {
 	int user_choice = -1;
 	do{
@@ -21,7 +21,7 @@ void startingMenu()
 		}
 		if (user_choice == 1)
 		{
-			outsideMenu();
+			outsideMenu(testPlayer);
 		}
 		if (user_choice == 2)
 		{
@@ -38,7 +38,7 @@ void startingMenu()
 	} while (user_choice);
 }
 
-void outsideMenu()
+void outsideMenu(PC testPlayer)
 {
 	int user_choice2 = -1;
 	while (user_choice2 < 0 || user_choice2 > 2)
@@ -56,11 +56,11 @@ void outsideMenu()
 	}
 	if (user_choice2 == 1)
 	{
-		playMenu();
+		playMenu(testPlayer);
 	}
 	if (user_choice2 == 2)
 	{
-		manageMenu();
+		manageMenu(testPlayer);
 	}
 }
 
@@ -90,7 +90,7 @@ void DMmenu()
 	}
 }
 
-void playMenu()
+void playMenu(PC testPlayer)
 {
 	int user_choice4 = -1;
 	while (user_choice4 < 0 || user_choice4 > 7)
@@ -113,23 +113,23 @@ void playMenu()
 	}
 	if (user_choice4 == 1)
 	{
-		initiativeCheck();
+		initiativeCheck(testPlayer);
 	}
 	if (user_choice4 == 2)
 	{
-		attack();
+		attack(testPlayer);
 	}
 	if (user_choice4 == 3)
 	{
-		manageHealth();
+		manageHealth(testPlayer);
 	}
 	if (user_choice4 == 4)
 	{
-		rollSaves();
+		rollSaves(testPlayer);
 	}
 	if (user_choice4 == 5)
 	{
-		rollSkills();
+		rollSkills(testPlayer);
 	}
 	if (user_choice4 == 6)
 	{
@@ -142,7 +142,7 @@ void playMenu()
 
 }
 
-void manageMenu()
+void manageMenu(PC testPlayer)
 {
 	int user_choice5 = -1;
 	while (user_choice5 < 0 || user_choice5 > 5)
@@ -163,19 +163,19 @@ void manageMenu()
 	}
 	if (user_choice5 == 1)
 	{
-		changeCharacter();
+		changeCharacter(testPlayer);
 	}
 	if (user_choice5 == 2)
 	{
-		loadCharacter(PC pc);
+		loadCharacter(testPlayer);
 	}
 	if (user_choice5 == 3)
 	{
-		buildDefault();
+		buildDefault(testPlayer);
 	}
 	if (user_choice5 == 4)
 	{
-		newCharacter();
+		newCharacter(testPlayer);
 	}
 	if (user_choice5 == 5)
 	{
