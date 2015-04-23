@@ -67,12 +67,13 @@ void outsideMenu(PC testPlayer)
 void DMmenu()
 {
 	int user_choice3 = -1;
-	while (user_choice3 < 0 || user_choice3 > 2)
+	while (user_choice3 < 0 || user_choice3 > 3)
 	{
 		cout << "Dungeon Master: What would you like to do?\n";
 		cout << "0 - Back to Starting Menu\n";
-		cout << "1 - ...\n";
-		cout << "2 - ...\n";
+		cout << "1 - Search for Monsters\n";
+		cout << "2 - Play As Monster\n";
+		cout << "3 - Generate Loot\n";
 		cin >> user_choice3;
 	}
 	if (user_choice3 == 0)
@@ -82,18 +83,22 @@ void DMmenu()
 	}
 	if (user_choice3 == 1)
 	{
-
+		searchMonsters();
 	}
 	if (user_choice3 == 2)
 	{
-
+		playAsMonster();
+	}
+	if (user_choice3 == 3)
+	{
+		generateLoot();
 	}
 }
 
 void playMenu(PC testPlayer)
 {
 	int user_choice4 = -1;
-	while (user_choice4 < 0 || user_choice4 > 7)
+	while (user_choice4 < 0 || user_choice4 > 5)
 	{
 		cout << "Player(Play Mode): What would you like to do?\n";
 		cout << "0 - Back to Starting Menu\n";
@@ -102,14 +107,13 @@ void playMenu(PC testPlayer)
 		cout << "3 - Manage Health\n";
 		cout << "4 - Save Check\n";
 		cout << "5 - Skill Check\n";
-		cout << "6 - Use...\n";
-		cout << "7 - Equip Item\n";
 		cin >> user_choice4;
 	}
 	if (user_choice4 == 0)
 	{
 		cout << "Returning to starting menu.\n";
 		system("pause");
+		outsideMenu(testPlayer);
 	}
 	if (user_choice4 == 1)
 	{
@@ -131,15 +135,6 @@ void playMenu(PC testPlayer)
 	{
 		rollSkills(testPlayer);
 	}
-	if (user_choice4 == 6)
-	{
-		use();
-	}
-	if (user_choice4 == 7)
-	{
-		equip();
-	}
-
 }
 
 void manageMenu(PC testPlayer)
@@ -160,6 +155,7 @@ void manageMenu(PC testPlayer)
 	{
 		cout << "Returning to starting menu.\n";
 		system("pause");
+		outsideMenu(testPlayer);
 	}
 	if (user_choice5 == 1)
 	{
