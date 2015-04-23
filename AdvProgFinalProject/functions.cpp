@@ -45,8 +45,8 @@ void outsideMenu()
 	{
 		cout << "Player: What would you like to do?\n";
 		cout << "0 - Back to Starting Menu\n";
-		cout << "1 - ...\n";
-		cout << "2 - ...\n";
+		cout << "1 - Play Character\n";
+		cout << "2 - Manage Character\n";
 		cin >> user_choice2;
 	}
 	if (user_choice2 == 0)
@@ -56,11 +56,11 @@ void outsideMenu()
 	}
 	if (user_choice2 == 1)
 	{
-
+		playMenu();
 	}
 	if (user_choice2 == 2)
 	{
-
+		manageMenu();
 	}
 }
 
@@ -87,6 +87,99 @@ void DMmenu()
 	if (user_choice3 == 2)
 	{
 
+	}
+}
+
+void playMenu()
+{
+	int user_choice4 = -1;
+	while (user_choice4 < 0 || user_choice4 > 7)
+	{
+		cout << "Player(Play Mode): What would you like to do?\n";
+		cout << "0 - Back to Starting Menu\n";
+		cout << "1 - Roll for Initiative\n";
+		cout << "2 - Attack\n";
+		cout << "3 - Manage Health\n";
+		cout << "4 - Save Check\n";
+		cout << "5 - Skill Check\n";
+		cout << "6 - Use...\n";
+		cout << "7 - Equip Item\n";
+		cin >> user_choice4;
+	}
+	if (user_choice4 == 0)
+	{
+		cout << "Returning to starting menu.\n";
+		system("pause");
+	}
+	if (user_choice4 == 1)
+	{
+		initiativeCheck();
+	}
+	if (user_choice4 == 2)
+	{
+		attack();
+	}
+	if (user_choice4 == 3)
+	{
+		manageHealth();
+	}
+	if (user_choice4 == 4)
+	{
+		rollSaves();
+	}
+	if (user_choice4 == 5)
+	{
+		rollSkills();
+	}
+	if (user_choice4 == 6)
+	{
+		use();
+	}
+	if (user_choice4 == 7)
+	{
+		equip();
+	}
+
+}
+
+void manageMenu()
+{
+	int user_choice5 = -1;
+	while (user_choice5 < 0 || user_choice5 > 5)
+	{
+		cout << "Player(Manage Mode): What would you like to do?\n";
+		cout << "0 - Back to Starting Menu\n";
+		cout << "1 - Change Character\n";
+		cout << "2 - Load Character\n";
+		cout << "3 - Build Default\n";
+		cout << "4 - Create New Character\n";
+		cout << "5 - Delete A Character\n";
+		cin >> user_choice5;
+	}
+	if (user_choice5 == 0)
+	{
+		cout << "Returning to starting menu.\n";
+		system("pause");
+	}
+	if (user_choice5 == 1)
+	{
+		changeCharacter();
+	}
+	if (user_choice5 == 2)
+	{
+		loadCharacter(PC pc);
+	}
+	if (user_choice5 == 3)
+	{
+		buildDefault();
+	}
+	if (user_choice5 == 4)
+	{
+		newCharacter();
+	}
+	if (user_choice5 == 5)
+	{
+		deleteCharacter();
 	}
 }
 

@@ -32,7 +32,8 @@ int rollStats();
 
 //Options Menus
 void startingMenu();
-void ingameMenu();
+void playMenu();
+void manageMenu();
 void outsideMenu();
 void DMmenu();
 
