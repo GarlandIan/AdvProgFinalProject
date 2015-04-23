@@ -1,20 +1,19 @@
-﻿Build started 4/22/2015 11:55:55 PM.
-     1>Project "C:\Users\Ian\Desktop\AdvProgFinalProject\AdvProgFinalProject\AdvProgFinalProject.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 4/23/2015 12:31:18 AM.
+     1>Project "C:\Users\Ian\Desktop\AdvProgFinalProject\AdvProgFinalProject\AdvProgFinalProject.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt character.cpp functions.cpp main.cpp pc.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt functions.cpp main.cpp pc.cpp
          pc.cpp
+         Generating Code...
+         Compiling...
          main.cpp
          functions.cpp
      1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(215): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
-         character.cpp
          Generating Code...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.lib" /MACHINE:X86 Debug\character.obj
          Debug\functions.obj
          Debug\main.obj
          Debug\pc.obj
-     1>functions.obj : error LNK2019: unresolved external symbol "public: __thiscall PC::PC(class PC const &)" (??0PC@@QAE@ABV0@@Z) referenced in function "void __cdecl manageMenu(class PC)" (?manageMenu@@YAXVPC@@@Z)
-     1>main.obj : error LNK2001: unresolved external symbol "public: __thiscall PC::PC(class PC const &)" (??0PC@@QAE@ABV0@@Z)
      1>functions.obj : error LNK2019: unresolved external symbol "int __cdecl initiativeCheck(class PC)" (?initiativeCheck@@YAHVPC@@@Z) referenced in function "void __cdecl playMenu(class PC)" (?playMenu@@YAXVPC@@@Z)
      1>functions.obj : error LNK2019: unresolved external symbol "int __cdecl attack(class PC)" (?attack@@YAHVPC@@@Z) referenced in function "void __cdecl playMenu(class PC)" (?playMenu@@YAXVPC@@@Z)
      1>functions.obj : error LNK2019: unresolved external symbol "int __cdecl manageHealth(class PC)" (?manageHealth@@YAHVPC@@@Z) referenced in function "void __cdecl playMenu(class PC)" (?playMenu@@YAXVPC@@@Z)
@@ -26,10 +25,10 @@
      1>functions.obj : error LNK2019: unresolved external symbol "void __cdecl buildDefault(class PC)" (?buildDefault@@YAXVPC@@@Z) referenced in function "void __cdecl manageMenu(class PC)" (?manageMenu@@YAXVPC@@@Z)
      1>functions.obj : error LNK2019: unresolved external symbol "int __cdecl newCharacter(class PC)" (?newCharacter@@YAHVPC@@@Z) referenced in function "void __cdecl manageMenu(class PC)" (?manageMenu@@YAXVPC@@@Z)
      1>functions.obj : error LNK2019: unresolved external symbol "int __cdecl deleteCharacter(void)" (?deleteCharacter@@YAHXZ) referenced in function "void __cdecl manageMenu(class PC)" (?manageMenu@@YAXVPC@@@Z)
-     1>pc.obj : error LNK2019: unresolved external symbol "public: __thiscall Character::Character(void)" (??0Character@@QAE@XZ) referenced in function "public: __thiscall PC::PC(void)" (??0PC@@QAE@XZ)
-     1>C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.exe : fatal error LNK1120: 13 unresolved externals
-     1>Done Building Project "C:\Users\Ian\Desktop\AdvProgFinalProject\AdvProgFinalProject\AdvProgFinalProject.vcxproj" (Rebuild target(s)) -- FAILED.
+     1>pc.obj : error LNK2019: unresolved external symbol "public: __thiscall Character::Character(void)" (??0Character@@QAE@XZ) referenced in function "public: __thiscall PC::PC(class PC const &)" (??0PC@@QAE@ABV0@@Z)
+     1>C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.exe : fatal error LNK1120: 12 unresolved externals
+     1>Done Building Project "C:\Users\Ian\Desktop\AdvProgFinalProject\AdvProgFinalProject\AdvProgFinalProject.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:01.77
+Time Elapsed 00:00:01.80

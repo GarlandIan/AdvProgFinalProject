@@ -1,10 +1,33 @@
 #include"pc.h"
 
-PC::PC(){}
+PC::PC(){
+	
+	level = 0;
+
+	playerClass = "";
+
+	armor;
+
+}
+
+PC::PC(int l, string pc, Armor a){
+
+	level = l;
+
+	playerClass = pc;
+
+	armor = a;
+
+}
 
 PC::PC(const PC &pc){
+
 	level = pc.level;
+
 	playerClass = pc.playerClass;
+
+	armor = pc.armor;
+
 }
 
 PC::~PC(){}

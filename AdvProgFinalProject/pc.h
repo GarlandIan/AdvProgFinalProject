@@ -14,7 +14,7 @@ private:
 
 public:
 	PC();
-	PC(int l, string pc);
+	PC(int l, string pc, Armor a);
 	PC(const PC &pc);
 	~PC();
 
