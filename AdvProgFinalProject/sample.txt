@@ -1,4 +1,4 @@
-Player Name
+Name Namerdoodle
 Level 1
 Warrior
 Alignment 3

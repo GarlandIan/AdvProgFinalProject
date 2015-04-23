@@ -167,7 +167,7 @@ void manageMenu(PC testPlayer)
 	}
 	if (user_choice5 == 3)
 	{
-		buildDefault(testPlayer);
+		buildDefault();
 	}
 	if (user_choice5 == 4)
 	{
@@ -185,16 +185,75 @@ void loadCharacter(PC pc){
 
 	string tmp;
 
+	int intTemp, ascoresTemp[6];
+
 	file.open("sample.txt");
 
-	file >> tmp;
+	for (int i = 1; i < 3; i++){
+		file >> tmp;
+	}
 
 	pc.setName(tmp);
 
-	cout << pc.getName();
+	file >> tmp;
+
+	file >> intTemp;
+
+	pc.setLevel(intTemp);
+
+	file >> tmp;
+
+	pc.setPClass(tmp);
+
+	file >> tmp;
+
+	file >> intTemp;
+
+	pc.setAlignment(intTemp);
+
+	for (int j = 0; j < 6; j++){
+		file >> tmp;
+		file >> ascoresTemp[j];
+	}
+
+	pc.setAScores(ascoresTemp);
+
+	cout << pc.getAScores();
 
 	system("PAUSE");
+
 	
+}
+
+void initiativeCheck(PC pc){ }
+
+void attack(PC pc){ }
+
+void manageHealth(PC pc){ }
+
+void rollSaves(PC pc){ }
+
+void rollSkills(PC pc){ }
+
+void newCharacter(PC pc){ }
+
+void changeCharacter(PC pc){ }
+
+void deleteCharacter(){ }
+
+void searchMonsters(){ }
+
+void playAsMonster(){ }
+
+int rollStats(){
+
+	int roll = 0, dice[4];
+
+	for (int i = 0; i < 4; i++){
+		dice[i] = 0;
+	}
+
+	return roll;
 }
 
 int roll(int diceNumber)

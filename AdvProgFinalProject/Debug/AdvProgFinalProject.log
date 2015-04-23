@@ -1,4 +1,4 @@
-﻿Build started 4/23/2015 12:49:39 AM.
+﻿Build started 4/23/2015 2:30:13 AM.
      1>Project "C:\Users\Ian\Desktop\AdvProgFinalProject\AdvProgFinalProject\AdvProgFinalProject.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt character.cpp functions.cpp main.cpp npc.cpp pc.cpp
@@ -6,7 +6,7 @@
          npc.cpp
          main.cpp
          functions.cpp
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(215): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(270): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
          character.cpp
          Generating Code...
        Link:
@@ -15,20 +15,9 @@
          Debug\main.obj
          Debug\npc.obj
          Debug\pc.obj
-     1>functions.obj : error LNK2019: unresolved external symbol "int __cdecl initiativeCheck(class PC)" (?initiativeCheck@@YAHVPC@@@Z) referenced in function "void __cdecl playMenu(class PC)" (?playMenu@@YAXVPC@@@Z)
-     1>functions.obj : error LNK2019: unresolved external symbol "int __cdecl attack(class PC)" (?attack@@YAHVPC@@@Z) referenced in function "void __cdecl playMenu(class PC)" (?playMenu@@YAXVPC@@@Z)
-     1>functions.obj : error LNK2019: unresolved external symbol "int __cdecl manageHealth(class PC)" (?manageHealth@@YAHVPC@@@Z) referenced in function "void __cdecl playMenu(class PC)" (?playMenu@@YAXVPC@@@Z)
-     1>functions.obj : error LNK2019: unresolved external symbol "int __cdecl rollSaves(class PC)" (?rollSaves@@YAHVPC@@@Z) referenced in function "void __cdecl playMenu(class PC)" (?playMenu@@YAXVPC@@@Z)
-     1>functions.obj : error LNK2019: unresolved external symbol "int __cdecl rollSkills(class PC)" (?rollSkills@@YAHVPC@@@Z) referenced in function "void __cdecl playMenu(class PC)" (?playMenu@@YAXVPC@@@Z)
-     1>functions.obj : error LNK2019: unresolved external symbol "int __cdecl use(void)" (?use@@YAHXZ) referenced in function "void __cdecl playMenu(class PC)" (?playMenu@@YAXVPC@@@Z)
-     1>functions.obj : error LNK2019: unresolved external symbol "int __cdecl equip(void)" (?equip@@YAHXZ) referenced in function "void __cdecl playMenu(class PC)" (?playMenu@@YAXVPC@@@Z)
-     1>functions.obj : error LNK2019: unresolved external symbol "int __cdecl changeCharacter(class PC)" (?changeCharacter@@YAHVPC@@@Z) referenced in function "void __cdecl manageMenu(class PC)" (?manageMenu@@YAXVPC@@@Z)
-     1>functions.obj : error LNK2019: unresolved external symbol "void __cdecl buildDefault(class PC)" (?buildDefault@@YAXVPC@@@Z) referenced in function "void __cdecl manageMenu(class PC)" (?manageMenu@@YAXVPC@@@Z)
-     1>functions.obj : error LNK2019: unresolved external symbol "int __cdecl newCharacter(class PC)" (?newCharacter@@YAHVPC@@@Z) referenced in function "void __cdecl manageMenu(class PC)" (?manageMenu@@YAXVPC@@@Z)
-     1>functions.obj : error LNK2019: unresolved external symbol "int __cdecl deleteCharacter(void)" (?deleteCharacter@@YAHXZ) referenced in function "void __cdecl manageMenu(class PC)" (?manageMenu@@YAXVPC@@@Z)
-     1>C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.exe : fatal error LNK1120: 11 unresolved externals
-     1>Done Building Project "C:\Users\Ian\Desktop\AdvProgFinalProject\AdvProgFinalProject\AdvProgFinalProject.vcxproj" (Rebuild target(s)) -- FAILED.
+         AdvProgFinalProject.vcxproj -> C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.exe
+     1>Done Building Project "C:\Users\Ian\Desktop\AdvProgFinalProject\AdvProgFinalProject\AdvProgFinalProject.vcxproj" (Rebuild target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:02.22
+Time Elapsed 00:00:02.24
