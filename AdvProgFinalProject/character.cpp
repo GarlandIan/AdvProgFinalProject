@@ -1,5 +1,36 @@
 #include"character.h"
 
+Character::Character(){}
+
+Character::Character(int abil[], int armorC, int al, int s, int hp, int init, int saves[], double skills[], string name)
+{
+	abilScores[6] = abil[6];
+	armorClass = armorC;
+	alignment = al;
+	speed = s;
+	this->hp = hp;
+	initiative = init;
+	this->saves[3] = saves[3];
+	this->skills[35] = skills[35];
+	this->name = name;
+
+}
+
+Character::Character(const Character &c)
+{
+	abilScores[6] = c.abilScores[6];
+	alignment = c.alignment;
+	armorClass = c.armorClass;
+	speed = c.speed;
+	hp = c.hp;
+	initiative = c.initiative;
+	saves[3] = c.saves[3];
+	skills[35] = c.skills[35];
+	name = c.name;
+	playerClass = c.playerClass;
+
+}
+
 Character::~Character(){}
 
 void Character::setAScores(int scores[]){
