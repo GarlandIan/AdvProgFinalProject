@@ -3,8 +3,8 @@
 PC::PC(){}
 
 PC::PC(const PC &pc){
-	pc.level = pc.level;
-
+	level = pc.level;
+	playerClass = pc.playerClass;
 }
 
 PC::~PC(){}
