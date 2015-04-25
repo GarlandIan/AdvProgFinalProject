@@ -1,0 +1,115 @@
+Version 0.1
+
+int acTemp, initativeTemp, savesTemp[3], skillTemp[35];
+string alignTemp;
+
+.... 
+
+file >> intTemp;
+
+alignTemp = determineAlignment(intTemp);
+
+.....
+
+file >> tmp;
+
+file >> tmp;
+
+file >> intTemp;
+
+pc.setHP(intTemp);
+
+file >> tmp;
+
+file >> acTemp; //storing as temp for configuration later
+
+file >> tmp;
+
+file >> tmp;
+
+file >> intTemp;
+
+pc.setSpeed(intTemp);
+
+file >> tmp;
+
+file >> tmp;
+
+file >> iniativeTemp; //storing as temp for later configuration
+
+file >> tmp;
+
+file >> tmp;
+
+file >> savesTemp[1]; //storing as temp for later config
+
+file >> tmp;
+
+file >> savesTemp[2]; //for later config
+
+file >> tmp;
+
+file >> savesTemp[3]; //for later config
+
+file >> tmp;
+
+for (int k = 0; k < 35; k++){
+	file >> tmp;
+	file >> skillTemp[k];
+}
+
+file >> tmp;
+
+file >> tmp;
+
+file >> tmp;
+
+pc.
+
+.....
+
+
+int acGen(intTemp);
+
+
+-------
+
+int acGen
+
+string determineAlignment(int n){
+
+string tmp;
+switch(n){
+	case: 1
+	tmp = "Lawful Good";
+	break;
+	case: 2
+	tmp = "Neutral Good";
+	break;
+	case: 3
+	tmp = "Chaotic Good";
+	break;
+	case: 4
+	tmp = "Lawful Neutral";
+	break;
+	case: 5
+	tmp = "True Neutral";
+	break;
+	case: 6
+	tmp = "Chaotic Neutral";
+	break;
+	case: 7
+	tmp = "Lawful Evil";
+	break;
+	case: 8
+	tmp = "Neutral Evil";
+	break;
+	case: 9
+	tmp = "Chaotic Evil";
+	break;
+	default: "No Alignment Available"
+}
+
+return tmp;
+
+}

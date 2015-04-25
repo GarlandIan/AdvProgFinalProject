@@ -1,8 +1,7 @@
-﻿Build started 4/23/2015 4:58:56 PM.
+﻿Build started 4/25/2015 10:39:14 AM.
      1>Project "C:\Users\Ian\Desktop\AdvProgFinalProject\AdvProgFinalProject\AdvProgFinalProject.vcxproj" on node 2 (Rebuild target(s)).
-     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppClean.targets(76,5): warning : The process cannot access the file 'c:\users\ian\desktop\advprogfinalproject\debug\advprogfinalproject.ilk' because it is being used by another process.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt character.cpp functions.cpp main.cpp npc.cpp pc.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt armor.cpp character.cpp functions.cpp main.cpp npc.cpp pc.cpp
          pc.cpp
          npc.cpp
          main.cpp
@@ -10,17 +9,18 @@
      1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(405): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
      1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(420): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
          character.cpp
+         armor.cpp
          Generating Code...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.lib" /MACHINE:X86 Debug\character.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.lib" /MACHINE:X86 Debug\armor.obj
+         Debug\character.obj
          Debug\functions.obj
          Debug\main.obj
          Debug\npc.obj
          Debug\pc.obj
-         LINK : C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.exe not found or not built by the last incremental link; performing full link
          AdvProgFinalProject.vcxproj -> C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.exe
      1>Done Building Project "C:\Users\Ian\Desktop\AdvProgFinalProject\AdvProgFinalProject\AdvProgFinalProject.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.36
+Time Elapsed 00:00:04.82

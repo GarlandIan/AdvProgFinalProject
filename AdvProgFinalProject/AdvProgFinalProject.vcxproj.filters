@@ -30,6 +30,9 @@
     <ClCompile Include="npc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="armor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">

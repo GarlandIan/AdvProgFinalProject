@@ -35,6 +35,31 @@ struct Armor
 	int speed;
 	int weight;
 	double spellFailCh;
+
+	Armor();
+	Armor(string e, string ei, string t, int a, int md, int ac, int s, int w, double sfc);
+	Armor(const Armor &a);
+	~Armor();
+
+	void setEnchant(string e);
+	void setEnchInfo(string ei);
+	void setType(string t);
+	void setACBon(int a);
+	void setMDex(int md);
+	void setACPen(int ac);
+	void setSpeed(int s);
+	void setWeight(int w);
+	void setSpellFail(double sfc);
+
+	string getEnchant();
+	string getEchInfo();
+	string getType();
+	int getACBon();
+	int getMDex();
+	int getACPen();
+	int getSpeed();
+	int getWeight();
+	double getSpellFail();
 };
 
 #endif
