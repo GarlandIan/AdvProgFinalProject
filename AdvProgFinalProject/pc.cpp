@@ -32,8 +32,6 @@ PC::PC(){
 
 	playerClass = "";
 
-	armor;
-
 }
 
 //Purpose: 
@@ -41,13 +39,11 @@ PC::PC(){
 //Post: 
 //Cite: 
 //Author: 
-PC::PC(int l, string pc, Armor a){
+PC::PC(int l, string pc){
 
 	level = l;
 
 	playerClass = pc;
-
-	armor = a;
 
 }
 
@@ -61,8 +57,6 @@ PC::PC(const PC &pc){
 	level = pc.level;
 
 	playerClass = pc.playerClass;
-
-	armor = pc.armor;
 
 }
 
@@ -116,10 +110,3 @@ int PC::getLevel(){
 	return level;
 
 }
-
-/*istream& operator>>(istream& is, PC item){
-		string in;
-		is >> in;
-		item.setName(in);
-		return is;
-}*/

@@ -1,26 +1,20 @@
-﻿Build started 4/25/2015 10:39:14 AM.
+﻿Build started 4/25/2015 4:30:21 PM.
      1>Project "C:\Users\Ian\Desktop\AdvProgFinalProject\AdvProgFinalProject\AdvProgFinalProject.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt armor.cpp character.cpp functions.cpp main.cpp npc.cpp pc.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt armor.cpp character.cpp functions.cpp item.cpp main.cpp npc.cpp pc.cpp
          pc.cpp
          npc.cpp
          main.cpp
+         item.cpp
          functions.cpp
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(405): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
-     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(420): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(325): error C2065: 'iniativeTemp' : undeclared identifier
+     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(501): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\ian\desktop\advprogfinalproject\advprogfinalproject\functions.cpp(516): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
          character.cpp
          armor.cpp
          Generating Code...
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.lib" /MACHINE:X86 Debug\armor.obj
-         Debug\character.obj
-         Debug\functions.obj
-         Debug\main.obj
-         Debug\npc.obj
-         Debug\pc.obj
-         AdvProgFinalProject.vcxproj -> C:\Users\Ian\Desktop\AdvProgFinalProject\Debug\AdvProgFinalProject.exe
-     1>Done Building Project "C:\Users\Ian\Desktop\AdvProgFinalProject\AdvProgFinalProject\AdvProgFinalProject.vcxproj" (Rebuild target(s)).
+     1>Done Building Project "C:\Users\Ian\Desktop\AdvProgFinalProject\AdvProgFinalProject\AdvProgFinalProject.vcxproj" (Rebuild target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:04.82
+Time Elapsed 00:00:05.60

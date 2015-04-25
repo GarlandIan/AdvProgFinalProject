@@ -261,7 +261,9 @@ void loadCharacter(PC pc){
 
 	ifstream file;
 
-	string tmp;
+	int acTemp, acBonusTemp, initativeTemp, savesTemp[3], skillTemp[35];
+
+	string tmp, alignTemp;
 
 	int intTemp, ascoresTemp[6];
 
@@ -296,8 +298,102 @@ void loadCharacter(PC pc){
 
 	pc.setAScores(ascoresTemp);
 
-	//for (int k = 0; k < 6; k++)
-	//	cout << pc.getAScores(k);
+	file >> tmp;
+
+	file >> tmp;
+
+	file >> intTemp;
+
+	pc.setHP(intTemp);
+
+	file >> tmp;
+
+	file >> acTemp; //storing as temp for configuration later
+
+	file >> tmp;
+
+	file >> tmp;
+
+	file >> intTemp;
+
+	pc.setSpeed(intTemp);
+
+	file >> tmp;
+
+	file >> tmp;
+
+	file >> iniativeTemp; //storing as temp for later configuration
+
+	file >> tmp;
+
+	file >> tmp;
+
+	file >> savesTemp[1]; //storing as temp for later config
+
+	file >> tmp;
+
+	file >> savesTemp[2]; //for later config
+
+	file >> tmp;
+
+	file >> savesTemp[3]; //for later config
+
+	file >> tmp;
+
+	for (int k = 0; k < 35; k++){
+		file >> tmp;
+		file >> skillTemp[k];
+	}
+
+	file >> tmp;
+
+	file >> tmp;
+
+	file >> tmp;
+
+	pc.armor.setType(tmp);
+
+	file >> tmp;
+
+	file >> intTemp;
+
+	pc.armor.setACBon(intTemp);
+
+	file >> tmp;
+
+	file >> intTemp;
+
+	pc.armor.setACPen(intTemp);
+
+	file >> tmp;
+
+	file >> intTemp;
+
+	pc.armor.setMDex(intTemp);
+
+	file >> tmp;
+
+	file >> intTemp;
+
+	pc.armor.setSpeed(intTemp);
+
+	file >> tmp;
+
+	file >> intTemp;
+
+	pc.armor.setWeight(intTemp);
+
+	file >> tmp;
+
+	file >> tmp;
+
+	pc.armor.setEnchant(tmp);
+
+	file >> tmp;
+
+	file >> tmp;
+
+	pc.armor.setEnchInfo(tmp);
 
 	system("PAUSE");
 

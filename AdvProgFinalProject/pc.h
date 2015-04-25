@@ -28,14 +28,12 @@ class PC : public Character
 {
 private:
 	int level;
-
 	string playerClass;
-
-	Armor armor;
+	Weapon weapon;
 
 public:
 	PC();
-	PC(int l, string pc, Armor a);
+	PC(int l, string pc);
 	PC(const PC &pc);
 	~PC();
 
@@ -45,7 +43,7 @@ public:
 	string getPClass();
 	int getLevel();
 
-	//friend istream& operator >> (istream& is, PC item);
+	Armor armor;
 
 };
  
