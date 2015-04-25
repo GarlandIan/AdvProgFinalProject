@@ -66,3 +66,24 @@ Speed 30
 Weight 20
 Enchantment None
 Info ------
+
+Item
+Small Tent
+Weight 20
+Price 10
+Amount 1
+Description Holds one Medium creature and takes 20 Minutes to assemble.
+
+Item
+Compass
+Weight 0.50
+Price 10
+Amount 1
+Description +2 circumstance bonus on Survival checks made to avoid becoming lost.
+
+Item
+Hooded Lantern
+Weight 2
+Price 7
+Amount 1
+Description Sheds normal light in a 30ft radius and increases the light level by on step for an additional 30ft beyond that area.
