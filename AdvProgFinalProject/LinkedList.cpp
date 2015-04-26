@@ -24,11 +24,11 @@ Certification of Authenticity:
 using namespace std;
 
 //add an idex number to a node in the linked list
-void LinkedList::add(int index)
+void LinkedList::add(string thing)
 {
 	if (head == NULL)
 	{
-		head = new ListNode(index);
+		head = new ListNode(thing);
 	}
 	else
 	{
@@ -37,7 +37,7 @@ void LinkedList::add(int index)
 		{
 			nodePtr = nodePtr->next;
 		}
-		nodePtr->next = new ListNode(index);
+		nodePtr->next = new ListNode(thing);
 	}
 }
 //index is stored in the order
@@ -55,14 +55,14 @@ void LinkedList::displayList() const
 //the current list will be displayed once this is performed.
 
 //The nodes need a way to be removed
-void LinkedList::remove(int index)
+void LinkedList::remove(string thing)
 {
 	ListNode *nodePtr, *previousNodePtr;
 	if (!head)
 	{
 		return;
 	}
-	if (head->value == index)
+	if (head->value == thing)
 	{
 		nodePtr = head;
 		head = head->next;
@@ -71,7 +71,7 @@ void LinkedList::remove(int index)
 	else
 	{
 		nodePtr = head;
-		while (nodePtr != NULL && nodePtr->value != index)
+		while (nodePtr != NULL && nodePtr->value != thing)
 		{
 			previousNodePtr = nodePtr;
 			nodePtr = nodePtr->next;

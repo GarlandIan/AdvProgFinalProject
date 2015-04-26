@@ -29,9 +29,9 @@ class LinkedList
 protected:
 	struct ListNode
 	{
-		double value;
+		string value;
 		ListNode *next;
-		ListNode(double value1, ListNode *next1 = NULL)
+		ListNode(string value1, ListNode *next1 = NULL)
 		{
 			value = value1;
 			next = next1;
@@ -42,9 +42,9 @@ public:
 	LinkedList() { head = NULL; } //default constructor
 	~LinkedList(); //destructor
 
-	void add(int index); //adds index to the linked list
-	void remove(int index); //removes index from the linked list
-	void displayList() const; //displayed the current list of indexes
+	void add(string thing); 
+	void remove(string thing); 
+	void displayList() const; 
 };
 
 #endif
