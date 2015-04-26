@@ -24,14 +24,14 @@ Certification of Authenticity:
 class Character
 {
 	private:
-		int abilScores[6];
-		int abilMod[6];
+		int abilScores[aScoreSize];
+		int abilMod[aScoreSize];
 		int armorClass;
-		int speed;
 		int hp;
 		int initiative;
-		int saves[3];
-		double skills[35];
+		int saves[saveSize];
+		int speed;
+		double skills[skillSize];
 		string alignment;
 		string race;
 		string name;
@@ -42,25 +42,27 @@ class Character
 		Character(const Character &c);
 		~Character();
 
+		void setAlignment(string al);
 		void setAScores(int scores[]);
 		void setAMods(double amods[]);
 		void setAClass(int ac);
-		void setSpeed(int s);
 		void setHP(int h);
 		void setInit(int i);
+		void setName(string n);
+		void setRace(string r);
 		void setSaves(int sa[]);
 		void setSkills(double skills[]);
-		void setAlignment(string al);
-		void setRace(string r);
-		void setName(string n);
+		void setSpeed(int s);
+		
+		
 
 		int getAScores(int i);
 		int getAMods(int i);
 		int getAClass();
-		int getSpeed();
 		int getHP();
 		int getInit();
 		int getSaves(int i);
+		int getSpeed();
 		double getSkills(int i);
 		string getAlignment();
 		string getRace();

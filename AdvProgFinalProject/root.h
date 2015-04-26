@@ -28,4 +28,5 @@ Certification of Authenticity:
 using namespace std;
 
 const int aScoreSize = 6;
+const int saveSize = 3;
 const int skillSize = 35;

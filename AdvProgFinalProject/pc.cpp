@@ -72,17 +72,6 @@ PC::~PC(){}
 //Post: 
 //Cite: 
 //Author: 
-void PC::setPClass(string pc){
-
-	playerClass = pc;
-
-}
-
-//Purpose: 
-//Pre: 
-//Post: 
-//Cite: 
-//Author: 
 void PC::setLevel(int l){
 
 	level = l;
@@ -94,9 +83,9 @@ void PC::setLevel(int l){
 //Post: 
 //Cite: 
 //Author: 
-string PC::getPClass(){
+void PC::setPClass(string pc){
 
-	return playerClass;
+	playerClass = pc;
 
 }
 
@@ -108,5 +97,16 @@ string PC::getPClass(){
 int PC::getLevel(){
 
 	return level;
+
+}
+
+//Purpose: 
+//Pre: 
+//Post: 
+//Cite: 
+//Author: 
+string PC::getPClass(){
+
+	return playerClass;
 
 }

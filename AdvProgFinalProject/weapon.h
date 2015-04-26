@@ -27,10 +27,10 @@ Certification of Authenticity:
 struct Weapon
 {
 	string critRange;
-	string type;
 	string damageRoll;
 	string enchant;
 	string special;
+	string type;
 	int critType;
 	int range;
 	int weight;

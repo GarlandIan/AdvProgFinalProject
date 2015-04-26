@@ -25,30 +25,31 @@ the purpose of future plagiarism checking)
 #include "weapon.h"
 struct Item
 {
-	string name;
 	string description;
+	string name;
 	double weight;
-	int price;
 	int numOfItem;
+	int price;
+	
 
 	Item();
 	Item(string n, string d, double w, int p, int noi);
 	Item(const Item &i);
 	~Item();
 
-	void setName(string n);
+	
 	void setDescription(string d);
-	void setWeight(double w);
-	void setPrice(int p);
+	void setName(string n);
 	void setNumOfItem(int noi);
+	void setPrice(int p);
+	void setWeight(double w);
 
-	string getName();
 	string getDescription();
-	double getWeight();
-	int getPrice();
+	string getName();
 	int getNumOfItem();
-
-
+	int getPrice();
+	double getWeight();
+	
 };
 
 #endif // !ITEM_H

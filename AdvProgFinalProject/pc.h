@@ -36,12 +36,12 @@ public:
 	PC(const PC &pc);
 	~PC();
 
-	void setPClass(string pc);
 	void setLevel(int l);
-
-	string getPClass();
+	void setPClass(string pc);
+	
 	int getLevel();
-
+	string getPClass();
+	
 	Armor armor;
 	Weapon weapon;
 	LinkedList inventory;

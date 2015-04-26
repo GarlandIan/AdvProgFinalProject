@@ -29,19 +29,21 @@ Item::Item(const Item &i)
 
 Item::~Item(){}
 
-void Item::setName(string n)
-{
-	name = n;
-}
 
 void Item::setDescription(string d)
 {
 	description = d;
 }
 
-void Item::setWeight(double w)
+void Item::setName(string n)
 {
-	weight = w;
+	name = n;
+}
+
+
+void Item::setNumOfItem(int noi)
+{
+	numOfItem = noi;
 }
 
 void Item::setPrice(int p)
@@ -49,14 +51,9 @@ void Item::setPrice(int p)
 	price = p;
 }
 
-void Item::setNumOfItem(int noi)
+void Item::setWeight(double w)
 {
-	numOfItem = noi;
-}
-
-string Item::getName()
-{
-	return name;
+	weight = w;
 }
 
 string Item::getDescription()
@@ -64,9 +61,14 @@ string Item::getDescription()
 	return description;
 }
 
-double Item::getWeight()
+string Item::getName()
 {
-	return weight;
+	return name;
+}
+
+int Item::getNumOfItem()
+{
+	return numOfItem;
 }
 
 int Item::getPrice()
@@ -74,9 +76,10 @@ int Item::getPrice()
 	return price;
 }
 
-int Item::getNumOfItem()
+double Item::getWeight()
 {
-	return numOfItem;
+	return weight;
 }
+
 
 

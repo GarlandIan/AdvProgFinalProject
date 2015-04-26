@@ -68,15 +68,16 @@ void Armor::setACBon(int a){
 
 }
 
-void Armor::setMDex(int md){
-
-	mDexBonus = md;
-
-}
 
 void Armor::setACPen(int ac){
 
 	acPenalty = ac;
+
+}
+
+void Armor::setMDex(int md){
+
+	mDexBonus = md;
 
 }
 
@@ -122,15 +123,15 @@ int Armor::getACBon(){
 
 }
 
-int Armor::getMDex(){
-
-	return mDexBonus;
-
-}
-
 int Armor::getACPen(){
 
 	return acPenalty;
+
+}
+
+int Armor::getMDex(){
+
+	return mDexBonus;
 
 }
 

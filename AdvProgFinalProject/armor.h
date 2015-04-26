@@ -30,8 +30,8 @@ struct Armor
 	string enchantInfo;
 	string type;
 	int acBonus;
-	int mDexBonus;
 	int acPenalty;
+	int mDexBonus;
 	int speed;
 	int weight;
 	double spellFailCh;
@@ -45,8 +45,8 @@ struct Armor
 	void setEnchInfo(string ei);
 	void setType(string t);
 	void setACBon(int a);
-	void setMDex(int md);
 	void setACPen(int ac);
+	void setMDex(int md);
 	void setSpeed(int s);
 	void setWeight(int w);
 	void setSpellFail(double sfc);
@@ -55,8 +55,8 @@ struct Armor
 	string getEchInfo();
 	string getType();
 	int getACBon();
-	int getMDex();
 	int getACPen();
+	int getMDex();
 	int getSpeed();
 	int getWeight();
 	double getSpellFail();

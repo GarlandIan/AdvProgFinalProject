@@ -35,36 +35,38 @@ Certification of Authenticity:
 
 void operations(PC pc); //can choose to 'play' or 'manage'; options in each mode are shown below
 //in play mode Commands all activated through a play command
-void initiativeCheck(PC pc);
 void attack(PC pc);
+void initiativeCheck(PC pc);
 void manageHealth(PC pc);
 //int castSpell(); //Not enough time to implement
 void rollSaves(PC pc);
 void rollSkills(PC pc);
 
 //outside of play activated through a manage command
-void changeCharacter(PC pc);
-void loadCharacter(PC pc);
 void buildDefault();
-void newCharacter(PC pc);
+void changeCharacter(PC pc);
 void deleteCharacter();
-void searchMonsters(); //exclusive to DM
-void playAsMonster(); //exclusive to DM
-void generateLoot(); //exclusive to DM
+void loadCharacter(PC pc);
+void newCharacter(PC pc);
+//outside of play activated through a manage command and exclusive to DM
+void generateLoot();
+void playAsMonster();
+void searchMonsters(); 
 
 //functions under new character
-int rollStats();
-
-string determineAlignment(int n);
 int abilityModSet(int n);
+int rollStats();
+string determineAlignment(int n);
+
 
 //Options Menus
-void startingMenu(PC pc);
-void playMenu(PC pc);
+void DMmenu();
 void manageMenu(PC pc);
 void outsideMenu(PC pc);
-void DMmenu();
+void playMenu(PC pc);
+void startingMenu(PC pc);
 
+//random number generator code
 int roll(int diceNumber);
 
 #endif
