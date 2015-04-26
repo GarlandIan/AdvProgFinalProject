@@ -291,7 +291,9 @@ void loadCharacter(PC pc){
 
 	file >> intTemp;
 
-	pc.setAlignment(intTemp);
+	alignTemp = determineAlignment(intTemp);
+
+	pc.setAlignment(alignTemp);
 
 	for (int j = 0; j < 6; j++){
 		file >> tmp;
@@ -424,6 +426,44 @@ void loadCharacter(PC pc){
 	}
 
 	
+}
+
+string determineAlignment(int n){
+
+	string tmp;
+	switch (n){
+	case 1:
+		tmp = "Lawful Good";
+		break;
+	case 2:
+		tmp = "Neutral Good";
+		break;
+	case 3:
+		tmp = "Chaotic Good";
+		break;
+	case 4:
+		tmp = "Lawful Neutral";
+		break;
+	case 5:
+		tmp = "True Neutral";
+		break;
+	case 6:
+		tmp = "Chaotic Neutral";
+		break;
+	case 7:
+		tmp = "Lawful Evil";
+		break;
+	case 8:
+		tmp = "Neutral Evil";
+		break;
+	case 9:
+		tmp = "Chaotic Evil";
+		break;
+	default: "No Alignment Available";
+	}
+
+	return tmp;
+
 }
 
 //Purpose: 

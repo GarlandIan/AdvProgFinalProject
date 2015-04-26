@@ -31,7 +31,6 @@ Character::Character(){
 		abilScores[i] = 0;
 		abilMod[i] = 0;
 	}
-	alignment = 0;
 	armorClass = 0;
 	speed = 0;
 	hp = 0;
@@ -40,6 +39,7 @@ Character::Character(){
 		saves[j] = 0;
 	for (int k = 0; k< 3; k++)
 		skills[k] = 0;
+	alignment = "";
 	name = "";
 }
 
@@ -48,7 +48,7 @@ Character::Character(){
 //Post: 
 //Cite: 
 //Author: 
-Character::Character(int abil[], int abilM[], int armorC, int al, int s, int hp, int init, int saves[], double skills[], string name)
+Character::Character(int abil[], int abilM[], int armorC, int s, int hp, int init, int saves[], double skills[], string al, string name)
 {
 	for (int i = 0; i < 6; i++){
 		abilScores[i] = abil[i];
@@ -77,13 +77,13 @@ Character::Character(const Character &c)
 		abilScores[i] = c.abilScores[i];
 		abilMod[i] = c.abilMod[i];
 	}
-	alignment = c.alignment;
 	armorClass = c.armorClass;
 	speed = c.speed;
 	hp = c.hp;
 	initiative = c.initiative;
 	saves[3] = c.saves[3];
 	skills[35] = c.skills[35];
+	alignment = c.alignment;
 	name = c.name;
 
 }
@@ -117,17 +117,6 @@ void Character::setAMods(int amods[]){
 	for (int i = 0; i < 6; i++){
 		abilMod[i] = amods[i];
 	}
-
-}
-
-//Purpose: 
-//Pre: 
-//Post: 
-//Cite: 
-//Author: 
-void Character::setAlignment(int al){
-
-	alignment = al;
 
 }
 
@@ -205,6 +194,18 @@ void Character::setSkills(double skillStats[]){
 //Post: 
 //Cite: 
 //Author: 
+void Character::setAlignment(string al){
+
+	alignment = al;
+
+}
+
+
+//Purpose: 
+//Pre: 
+//Post: 
+//Cite: 
+//Author: 
 void Character::setName(string n){
 
 	name = n;
@@ -242,17 +243,6 @@ int Character::getAMods(int i){
 int Character::getAClass(){
 
 	return armorClass;
-
-}
-
-//Purpose: 
-//Pre: 
-//Post: 
-//Cite: 
-//Author: 
-int Character::getAlignment(){
-
-	return alignment;
 
 }
 
@@ -308,6 +298,17 @@ int* Character::getSaves(){
 double* Character::getSkills(){
 
 		return skills;
+
+}
+
+//Purpose: 
+//Pre: 
+//Post: 
+//Cite: 
+//Author: 
+string Character::getAlignment(){
+
+	return alignment;
 
 }
 
