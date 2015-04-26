@@ -21,9 +21,9 @@ Certification of Authenticity:
 
 #include"pc.h"
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: default constructor
+//Pre: none
+//Post: makes default constructor
 //Cite: 
 //Author: 
 PC::PC(){
@@ -34,9 +34,9 @@ PC::PC(){
 
 }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: simple constructor
+//Pre: none
+//Post: makes simple constructor
 //Cite: 
 //Author: 
 PC::PC(int l, string pc){
@@ -47,9 +47,9 @@ PC::PC(int l, string pc){
 
 }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: copy constructor
+//Pre: none
+//Post: makes one instance of PC upon another
 //Cite: 
 //Author: 
 PC::PC(const PC &pc){
@@ -60,16 +60,16 @@ PC::PC(const PC &pc){
 
 }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: default constructor
+//Pre: none
+//Post: destruct-inates
 //Cite: 
 //Author: 
 PC::~PC(){}
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: sets value of level
+//Pre: input value
+//Post: sets value of level
 //Cite: 
 //Author: 
 void PC::setLevel(int l){
@@ -78,9 +78,9 @@ void PC::setLevel(int l){
 
 }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: sets player class value
+//Pre: input value
+//Post: sets value of player class
 //Cite: 
 //Author: 
 void PC::setPClass(string pc){
@@ -89,9 +89,9 @@ void PC::setPClass(string pc){
 
 }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: gets player value
+//Pre: none
+//Post: returns value of level
 //Cite: 
 //Author: 
 int PC::getLevel(){
@@ -100,9 +100,9 @@ int PC::getLevel(){
 
 }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: gets player class
+//Pre: none
+//Post: returns value of player class
 //Cite: 
 //Author: 
 string PC::getPClass(){

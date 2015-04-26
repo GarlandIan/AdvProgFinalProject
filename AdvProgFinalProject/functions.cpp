@@ -21,16 +21,16 @@ Certification of Authenticity:
 
 #include"header.h"
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: allows player to attack
+//Pre: monster exists
+//Post: player lowers hp value if possible on monster
 //Cite: 
 //Author: 
 void attack(PC pc){ }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: makes a default saves file txt
+//Pre: none
+//Post: creates a txt file with basic default settings
 //Cite: 
 //Author: 
 void buildDefault(){
@@ -109,23 +109,23 @@ void buildDefault(){
 		<< "EnchantmentInfo: " << "-----" << endl; //armor.enchantInfo
 }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: change character
+//Pre: none
+//Post: changes character
 //Cite: 
 //Author: 
 void changeCharacter(PC pc){ }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: delete a character
+//Pre: character exists
+//Post: restores character file to default settings
 //Cite: 
 //Author: 
 void deleteCharacter(){ }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: gives exluded menu to dm
+//Pre: none
+//Post: DM has a menu
 //Cite: 
 //Author: 
 void DMmenu()
@@ -164,9 +164,10 @@ void DMmenu()
 		DMmenu();
 	}
 }
-//Purpose: 
-//Pre: 
-//Post: 
+
+//Purpose: create a value of gold
+//Pre: none
+//Post: creates a value of gp
 //Cite: 
 //Author: 
 void generateLoot()
@@ -1138,9 +1139,9 @@ void generateLoot()
 	system("pause");
 }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: checks initiative
+//Pre: none
+//Post: retrns value of initiative
 //Cite: 
 //Author: 
 void initiativeCheck(PC pc)
@@ -1150,9 +1151,9 @@ void initiativeCheck(PC pc)
 	system("pause");
 }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: loads character from txt file
+//Pre: txt file that contains character exists
+//Post: stores data from txt file into system
 //Cite: 
 //Author: 
 void loadCharacter(PC pc){
@@ -1336,9 +1337,9 @@ void loadCharacter(PC pc){
 
 }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: change the value of health
+//Pre: none
+//Post: changes value of health
 //Cite: 
 //Author: 
 void manageHealth(PC pc){
@@ -1393,9 +1394,9 @@ void manageHealth(PC pc){
 
 }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: user menu
+//Pre: none
+//Post: gives user a meny
 //Cite: 
 //Author: 
 void manageMenu(PC testPlayer)
@@ -1450,16 +1451,16 @@ void manageMenu(PC testPlayer)
 	}
 }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: make a new character
+//Pre: none
+//Post: makes new character
 //Cite: 
 //Author: 
 void newCharacter(PC pc){ }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: menu
+//Pre: none
+//Post: another menu for player
 //Cite: 
 //Author: 
 void outsideMenu(PC testPlayer)
@@ -1488,16 +1489,16 @@ void outsideMenu(PC testPlayer)
 	}
 }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: allows DM to be monster
+//Pre: none
+//Post: DM becomes monster
 //Cite: 
 //Author: 
 void playAsMonster(){ }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: menu
+//Pre: none
+//Post: another menu for user
 //Cite: 
 //Author: 
 void playMenu(PC testPlayer)
@@ -1552,9 +1553,9 @@ void playMenu(PC testPlayer)
 	}
 }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: creating stats for saves
+//Pre: none
+//Post: gives stats to saves
 //Cite: 
 //Author: 
 void rollSaves(PC pc){
@@ -1579,9 +1580,9 @@ void rollSaves(PC pc){
 
 }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: creating stats for skills
+//Pre: none
+//Post: gives stats to skills
 //Cite: 
 //Author: 
 void rollSkills(PC pc){
@@ -1615,9 +1616,9 @@ void rollSkills(PC pc){
 
 }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: starting menu for user
+//Pre: none
+//Post: another menu for user
 //Cite: 
 //Author: 
 void startingMenu(PC testPlayer)
@@ -1658,16 +1659,16 @@ void startingMenu(PC testPlayer)
 	} while (user_choice);
 }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: searchs for a monster
+//Pre: none
+//Post: returns monster
 //Cite: 
 //Author: 
 void searchMonsters(){ }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: setting stat for allignment
+//Pre: input value
+//Post: sets value for allignment
 //Cite: 
 //Author: 
 string determineAlignment(int n){
@@ -1708,9 +1709,9 @@ string determineAlignment(int n){
 
 }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: Random number generator
+//Pre: input value
+//Post: returns random number
 //Cite: 
 //Author: 
 int roll(int diceNumber)
@@ -1722,9 +1723,9 @@ int roll(int diceNumber)
 }
 
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: sets value for all other stats
+//Pre: none
+//Post: sets value for other variables
 //Cite: 
 //Author: 
 int rollStats(){

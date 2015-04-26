@@ -21,9 +21,9 @@ Certification of Authenticity:
 
 #include"npc.h"
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: default constructor
+//Pre: none
+//Post: makes default constructor
 //Cite: 
 //Author: 
 NPC::NPC(){
@@ -32,9 +32,9 @@ NPC::NPC(){
 
 }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: simple constructor
+//Pre: none
+//Post: makes simple constructor
 //Cite: 
 //Author: 
 NPC::NPC(int c){
@@ -43,9 +43,9 @@ NPC::NPC(int c){
 
 }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: copy constructor
+//Pre: none
+//Post: makes one instance of NPC upon another
 //Cite: 
 //Author: 
 NPC::NPC(const NPC &n){
@@ -54,16 +54,16 @@ NPC::NPC(const NPC &n){
 
 }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: destructor
+//Pre: none
+//Post: destruct-inates
 //Cite: 
 //Author: 
 NPC::~NPC(){}
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: gets CR
+//Pre: none
+//Post: returns value of CR
 //Cite: 
 //Author: 
 int NPC::getCR(){
@@ -72,9 +72,9 @@ int NPC::getCR(){
 
 }
 
-//Purpose: 
-//Pre: 
-//Post: 
+//Purpose: sets value of CR
+//Pre: input value
+//Post: sets value of CR
 //Cite: 
 //Author: 
 void NPC::setCR(int c){
