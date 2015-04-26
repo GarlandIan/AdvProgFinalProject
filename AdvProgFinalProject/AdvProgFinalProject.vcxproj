@@ -69,6 +69,8 @@
     <ClCompile Include="functions.cpp" />
     <ClCompile Include="item.cpp" />
     <ClCompile Include="LinkedList.cpp" />
+    <ClCompile Include="LinkedList2.cpp" />
+    <ClCompile Include="LinkedList3.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="npc.cpp" />
     <ClCompile Include="pc.cpp" />
@@ -79,6 +81,8 @@
     <ClInclude Include="header.h" />
     <ClInclude Include="item.h" />
     <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="LinkedList2.h" />
+    <ClInclude Include="LinkedList3.h" />
     <ClInclude Include="npc.h" />
     <ClInclude Include="pc.h" />
     <ClInclude Include="root.h" />
