@@ -1175,6 +1175,11 @@ void loadCharacter(PC pc){
 	double dubTemp, modTemp[6], iWeight;
 
 	string tmp, alignTemp, item, iName, iDesc;
+	LinkedList itemNames;
+	LinkedList itemDescs;
+	LinkedList2 itemPrices;
+	LinkedList2 itemAmounts;
+	LinkedList3 itemWeights;
 
 
 	file.open("sample.txt");
@@ -1321,29 +1326,45 @@ void loadCharacter(PC pc){
 
 	pc.armor.setEnchInfo(tmp);
 
-	while (!file.eof()){
+	/*while (!file.eof()){
 
 	file >> item;
 
 	file >> iName;
 
 	getline(file, iName); //Takes in name
+	itemNames.add(iName);
 
 	file >> tmp;
 
 	file >> iWeight; //Takes in weight integer
+	itemWeights.add(iWeight);
 
 	file >> tmp;
 
 	file >> iPrice; //Takes in price
+	itemPrices.add(iPrice);
 
 	file >> tmp;
 
 	file >> iAmount; //Takes in amount
+	itemAmounts.add(iAmount);
 
 	getline(file, iDesc); //Takes in description
+	itemDescs.add(iDesc);
 
 	}
+	itemNames.displayList();
+	cout << endl;
+	itemWeights.displayList();
+	cout << endl;
+	itemPrices.displayList();
+	cout << endl;
+	itemAmounts.displayList();
+	cout << endl;
+	itemDescs.displayList();
+	cout << endl;
+	*/
 
 }
 
@@ -1761,6 +1782,7 @@ int rollStats(){
 				dice[i + 1] = tmp;
 			}
 		}
+	}
 
 	for (int i = 0; i < 3; i++)
 	{

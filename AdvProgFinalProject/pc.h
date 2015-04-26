@@ -44,8 +44,14 @@ public:
 	
 	Armor armor;
 	Weapon weapon;
+	/*
 	LinkedList itemNames;
-	LinkedList itemDesc;
+	LinkedList itemDescs;
+	LinkedList2 itemPrices;
+	LinkedList2 itemAmounts;
+	LinkedList3 itemWeights;
+	 currently in the load function to be able to use them
+	 */
 
 };
  
