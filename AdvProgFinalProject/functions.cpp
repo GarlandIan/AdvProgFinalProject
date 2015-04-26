@@ -127,7 +127,7 @@ void deleteCharacter(){ }
 //Pre: none
 //Post: DM has a menu
 //Cite: 
-//Author: 
+//Author: Kody
 void DMmenu()
 {
 	int user_choice3 = -1;
@@ -1143,7 +1143,7 @@ void generateLoot()
 //Pre: none
 //Post: retrns value of initiative
 //Cite: 
-//Author: 
+//Author: Kody, Zach, Ian
 void initiativeCheck(PC pc)
 {
 	cout << "Checking initiative . . .\n";
@@ -1396,9 +1396,9 @@ void manageHealth(PC pc){
 
 //Purpose: user menu
 //Pre: none
-//Post: gives user a meny
+//Post: gives user a menu
 //Cite: 
-//Author: 
+//Author: Kody
 void manageMenu(PC testPlayer)
 {
 	int user_choice5 = -1;
@@ -1462,7 +1462,7 @@ void newCharacter(PC pc){ }
 //Pre: none
 //Post: another menu for player
 //Cite: 
-//Author: 
+//Author: Kody
 void outsideMenu(PC testPlayer)
 {
 	int user_choice2 = -1;
@@ -1500,7 +1500,7 @@ void playAsMonster(){ }
 //Pre: none
 //Post: another menu for user
 //Cite: 
-//Author: 
+//Author: Kody
 void playMenu(PC testPlayer)
 {
 	int user_choice4 = -1;
@@ -1620,7 +1620,7 @@ void rollSkills(PC pc){
 //Pre: none
 //Post: another menu for user
 //Cite: 
-//Author: 
+//Author: Kody
 void startingMenu(PC testPlayer)
 {
 	int user_choice = -1;
