@@ -1170,11 +1170,12 @@ void loadCharacter(PC pc){
 
 	ifstream file;
 
-	int acTemp, acBonusTemp, initativeTemp, savesTemp[3], skillTemp[35], intTemp, ascoresTemp[6];
+	int acTemp, acBonusTemp, initativeTemp, savesTemp[3], skillTemp[35], intTemp, ascoresTemp[6], iPrice, iAmount;
 
-	double dubTemp, modTemp[6];
+	double dubTemp, modTemp[6], iWeight;
 
-	string tmp, alignTemp;
+	string tmp, alignTemp, item, iName, iDesc;
+
 
 	file.open("sample.txt");
 
@@ -1320,30 +1321,29 @@ void loadCharacter(PC pc){
 
 	pc.armor.setEnchInfo(tmp);
 
-	/*while (!file.eof()){
+	while (!file.eof()){
+
+	file >> item;
+
+	file >> iName;
+
+	getline(file, iName); //Takes in name
 
 	file >> tmp;
 
-	file >> tmp;
-
-	getline(file, tmp); //Takes in name
+	file >> iWeight; //Takes in weight integer
 
 	file >> tmp;
 
-	file >> dubTemp; //Takes in weight integer
+	file >> iPrice; //Takes in price
 
 	file >> tmp;
 
-	file >> intTemp; //Takes in price
+	file >> iAmount; //Takes in amount
 
-	file >> tmp;
-
-	file >> intTemp; //Takes in amount
-
-	getline(file, tmp); //Takes in description
+	getline(file, iDesc); //Takes in description
 
 	}
-	*/
 
 }
 

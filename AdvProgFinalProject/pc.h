@@ -44,7 +44,8 @@ public:
 	
 	Armor armor;
 	Weapon weapon;
-	LinkedList inventory;
+	LinkedList itemNames;
+	LinkedList itemDesc;
 
 };
  
