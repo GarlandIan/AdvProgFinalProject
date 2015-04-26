@@ -23,6 +23,8 @@ Certification of Authenticity:
 #define ARMOR_H
 
 #include"LinkedList.h"
+#include "LinkedList2.h"
+#include "LinkedList3.h"
 
 struct Armor
 {
