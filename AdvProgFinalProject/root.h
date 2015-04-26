@@ -21,6 +21,7 @@ Certification of Authenticity:
 
 #include <iostream>
 #include <ctime>
+#include <cmath>
 #include <string>
 #include <fstream>
 

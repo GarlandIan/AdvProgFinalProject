@@ -1,5 +1,6 @@
 Name Namerdoodle
 Level 1
+Human
 Warrior
 Alignment 3
 

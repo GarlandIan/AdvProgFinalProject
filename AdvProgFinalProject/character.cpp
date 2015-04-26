@@ -40,6 +40,7 @@ Character::Character(){
 	for (int k = 0; k< 3; k++)
 		skills[k] = 0;
 	alignment = "";
+	race = "";
 	name = "";
 }
 
@@ -48,7 +49,7 @@ Character::Character(){
 //Post: 
 //Cite: 
 //Author: 
-Character::Character(int abil[], int abilM[], int armorC, int s, int hp, int init, int saves[], double skills[], string al, string name)
+Character::Character(int abil[], int abilM[], int armorC, int s, int hp, int init, int saves[], double skills[], string al, string r, string name)
 {
 	for (int i = 0; i < 6; i++){
 		abilScores[i] = abil[i];
@@ -61,6 +62,7 @@ Character::Character(int abil[], int abilM[], int armorC, int s, int hp, int ini
 	this->saves[3] = saves[3];
 	this->skills[35] = skills[35];
 	alignment = al;
+	race = r;
 	this->name = name;
 
 }
@@ -84,6 +86,7 @@ Character::Character(const Character &c)
 	saves[3] = c.saves[3];
 	skills[35] = c.skills[35];
 	alignment = c.alignment;
+	race = c.race;
 	name = c.name;
 
 }
@@ -93,7 +96,24 @@ Character::Character(const Character &c)
 //Post: 
 //Cite: 
 //Author: 
-Character::~Character(){}
+Character::~Character(){
+	for (int i = 0; i < 6; i++){
+		abilScores[i] = 0;
+		abilMod[i] = 0;
+	}
+
+	armorClass = 0;
+	speed = 0;
+	hp = 0;
+	initiative = 0;
+	for (int j = 0; j < 3; j++)
+		saves[j] = 0;
+	for (int k = 0; k< 3; k++)
+		skills[k] = 0;
+	alignment = "";
+	race = "";
+	name = "";
+}
 
 //Purpose: 
 //Pre: 
@@ -113,7 +133,7 @@ void Character::setAScores(int scores[]){
 //Post: 
 //Cite: 
 //Author: 
-void Character::setAMods(int amods[]){
+void Character::setAMods(double amods[]){
 	for (int i = 0; i < 6; i++){
 		abilMod[i] = amods[i];
 	}
@@ -212,6 +232,16 @@ void Character::setName(string n){
 
 }
 
+//Purpose: 
+//Pre: 
+//Post: 
+//Cite: 
+//Author: 
+void Character::setRace(string r){
+
+	race = r;
+
+}
 
 //Purpose: 
 //Pre: 
@@ -284,9 +314,9 @@ int Character::getInit(){
 //Post: 
 //Cite: 
 //Author: 
-int* Character::getSaves(){
+int Character::getSaves(int i){
 
-		return saves;
+		return saves[i];
 
 }
 
@@ -295,9 +325,9 @@ int* Character::getSaves(){
 //Post: 
 //Cite: 
 //Author: 
-double* Character::getSkills(){
+double Character::getSkills(int i){
 
-		return skills;
+		return skills[i];
 
 }
 
@@ -309,6 +339,17 @@ double* Character::getSkills(){
 string Character::getAlignment(){
 
 	return alignment;
+
+}
+
+//Purpose: 
+//Pre: 
+//Post: 
+//Cite: 
+//Author: 
+string Character::getRace(){
+
+	return race;
 
 }
 

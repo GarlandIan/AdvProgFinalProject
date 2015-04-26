@@ -56,6 +56,7 @@ void generateLoot(); //exclusive to DM
 int rollStats();
 
 string determineAlignment(int n);
+int abilityModSet(int n);
 
 //Options Menus
 void startingMenu(PC pc);

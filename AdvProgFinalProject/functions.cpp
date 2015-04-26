@@ -261,13 +261,11 @@ void loadCharacter(PC pc){
 
 	ifstream file;
 
-	int acTemp, acBonusTemp, initativeTemp, savesTemp[3], skillTemp[35];
+	int acTemp, acBonusTemp, initativeTemp, savesTemp[3], skillTemp[35], intTemp, ascoresTemp[6];
 
-	double dubTemp;
+	double dubTemp, modTemp[6];
 
 	string tmp, alignTemp;
-
-	int intTemp, ascoresTemp[6];
 
 	file.open("sample.txt");
 
@@ -285,6 +283,10 @@ void loadCharacter(PC pc){
 
 	file >> tmp;
 
+	pc.setRace(tmp);
+
+	file >> tmp;
+
 	pc.setPClass(tmp);
 
 	file >> tmp;
@@ -295,7 +297,7 @@ void loadCharacter(PC pc){
 
 	pc.setAlignment(alignTemp);
 
-	cout << pc.getAlignment() << endl;
+	//cout << pc.getAlignment() << endl;
 
 	system("pause");
 
@@ -305,6 +307,12 @@ void loadCharacter(PC pc){
 	}
 
 	pc.setAScores(ascoresTemp);
+
+	for (int k = 0; k < 6; k++){
+		modTemp[k] = floor((ascoresTemp[k] - 10) / 2);
+	}
+
+	pc.setAMods(modTemp);
 
 	file >> tmp;
 
@@ -430,6 +438,11 @@ void loadCharacter(PC pc){
 	
 }
 
+//Purpose: 
+//Pre: 
+//Post: 
+//Cite: 
+//Author: 
 string determineAlignment(int n){
 
 	string tmp;
@@ -492,21 +505,120 @@ void attack(PC pc){ }
 //Post: 
 //Cite: 
 //Author: 
-void manageHealth(PC pc){ }
+void manageHealth(PC pc){
+ 
+	int tmp = 0, h = 0, temph = pc.getHP();
+	while (tmp < 1 || tmp < 3){
+		cout << "Enter the number for the corresponding option you wish to activate\n\n"
+			<< "1. Gain Health\n"
+			<< "2. Lose Health\n"
+			<< "3. Return\n";
+
+		cin >> tmp;
+	}
+	
+	if (tmp == 1){
+
+		while (h < 1){
+
+			cout << "How much health have you gained?\n";
+
+			cin >> h;
+
+		}
+
+		pc.setHP(temph + h);
+
+		cout << "Your current health is " << pc.getHP() << endl;
+
+	}
+
+	else if (tmp == 2){
+
+		while (h < 1){
+
+			cout << "How much health have you lost?\n";
+
+			cin >> h;
+
+		}
+	
+		pc.setHP(temph - h);
+
+		cout << "Your current health is " << pc.getHP() << endl;
+
+	}
+
+	else{
+
+		return;
+
+	}
+
+}
 
 //Purpose: 
 //Pre: 
 //Post: 
 //Cite: 
 //Author: 
-void rollSaves(PC pc){ }
+void rollSaves(PC pc){
+
+	int tmp = -1, attempt = 0;
+
+	while (tmp < 0 || tmp > 4){
+		cout << "Which saving throw are you attempting to roll?\n"
+			<< "1. Fortitude\n"
+			<< "2. Reflex\n" 
+			<< "3. Will\n"
+			<< "4. Return\n";
+
+		cin >> tmp;
+	}
+
+	if (tmp == 4){ return; }
+	
+	attempt = roll(pc.getSaves(tmp-1));
+
+	cout << "You rolled a " << attempt << "!" << endl;
+
+}
 
 //Purpose: 
 //Pre: 
 //Post: 
 //Cite: 
 //Author: 
-void rollSkills(PC pc){ }
+void rollSkills(PC pc){
+
+	int input = 0, dieRoll = 0;
+	do{
+		cout << "Enter the number of a skill to roll or type 36 to return\n"
+			<< "1. Acrobatics\n" << "2. Appraise\n" << "3. Bluff\n" << "4. Climb\n"
+			<< "5. Craft\n" << "6. Diplomacy\n" << "7. Disable Device\n"
+			<< "8. Diguise\n" << "9. Escape Artist\n" << "10. Fly\n"
+			<< "11. Handle Animal\n" << "12. Heal\n" << "13. Intimidate\n"
+			<< "14. Knowledge (Arcana)\n" << "15. Knowledge (Dungeoneering)\n"
+			<< "16. Knowledge (Engineering)\n" << "17. Knowledge (Geography)\n"
+			<< "18. Knowledge (History)\n" << "19. Knowledge (Local)\n"
+			<< "20. Knowledge (Nature)\n" << "20. Knowledge (Nobility)\n"
+			<< "22. Knowledge (Planes)\n" << "23. Knowledge (Religion)\n"
+			<< "24. Linguistics\n" << "25. Perception\n" << "26. Perform\n"
+			<< "27. Profession\n" << "28. Ride\n" << "29. Sense Motive\n"
+			<< "30. Sleight of Hand\n" << "31. Spellcraft\n" << "32. Stealth\n"
+			<< "33. Survival\n" << "34. Swim\n" << "35. Use Magic Device\n";
+
+		cin >> input;
+
+	} while (input < 1 || input > 36);
+
+	if (input == 36){ return; }
+
+	dieRoll = pc.getSkills(input) + roll(20);
+
+	cout << "You rolled a " << dieRoll << " on your check!";
+
+}
 
 //Purpose: 
 //Pre: 
@@ -550,13 +662,24 @@ void playAsMonster(){ }
 //Author: 
 int rollStats(){
 
-	int roll = 0, dice[4];
+	int statRoll = 0, tmp = 0, dice[4];
 
 	for (int i = 0; i < 4; i++){
 		dice[i] = 0;
 	}
 
-	return roll;
+	for (int i = 0; i < 4; i++){
+		dice[i] = roll(6);
+	}
+
+	cout << "You rolled a " << dice[0] << ", a " << dice[1] << ", a" << dice[2] << ", and a" << dice[3] << endl
+		<< "We will add the three highest rolls and set that as your stat.\n";
+
+	//Zack, bubble sort the dice array so the first three variables are the highest
+	
+	//Add the top 3 rolls together into the statRoll variable
+
+	return statRoll;
 }
 
 //Purpose: 
