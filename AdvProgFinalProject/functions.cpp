@@ -263,6 +263,8 @@ void loadCharacter(PC pc){
 
 	int acTemp, acBonusTemp, initativeTemp, savesTemp[3], skillTemp[35];
 
+	double dubTemp;
+
 	string tmp, alignTemp;
 
 	int intTemp, ascoresTemp[6];
@@ -322,7 +324,7 @@ void loadCharacter(PC pc){
 
 	file >> tmp;
 
-	file >> iniativeTemp; //storing as temp for later configuration
+	file >> initativeTemp; //storing as temp for later configuration
 
 	file >> tmp;
 
@@ -396,6 +398,30 @@ void loadCharacter(PC pc){
 	pc.armor.setEnchInfo(tmp);
 
 	system("PAUSE");
+
+	while (!file.eof){
+
+		file >> tmp;
+
+		file >> tmp;
+
+		getline(file, tmp); //Takes in name
+
+		file >> tmp;
+
+		file >> dubTemp; //Takes in weight integer
+
+		file >> tmp;
+
+		file >> intTemp; //Takes in price
+
+		file >> tmp;
+
+		file >> intTemp; //Takes in amount
+
+		getline(file, tmp); //Takes in description
+
+	}
 
 	
 }
