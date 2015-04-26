@@ -1740,12 +1740,25 @@ int rollStats(){
 		dice[i] = roll(6);
 	}
 
+	for (int j = 0; j < 4; j++)
+	{
+		for (int i = 0; i < 3; i++)
+		{
+			if (dice[i + 1] > dice[i])
+			{
+				tmp = dice[i];
+				dice[i] = dice[i + 1];
+				dice[i + 1] = tmp;
+			}
+		}
+
+	for (int i = 0; i < 3; i++)
+	{
+		statRoll += dice[i];
+	}
+
 	cout << "You rolled a " << dice[0] << ", a " << dice[1] << ", a" << dice[2] << ", and a" << dice[3] << endl
 		<< "We will add the three highest rolls and set that as your stat.\n";
-
-	//Zack, bubble sort the dice array so the first three variables are the highest
-	
-	//Add the top 3 rolls together into the statRoll variable
 
 	return statRoll;
 }
