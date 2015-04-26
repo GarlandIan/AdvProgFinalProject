@@ -68,6 +68,7 @@
     <ClCompile Include="character.cpp" />
     <ClCompile Include="functions.cpp" />
     <ClCompile Include="item.cpp" />
+    <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="npc.cpp" />
     <ClCompile Include="pc.cpp" />
@@ -77,6 +78,7 @@
     <ClInclude Include="character.h" />
     <ClInclude Include="header.h" />
     <ClInclude Include="item.h" />
+    <ClInclude Include="LinkedList.h" />
     <ClInclude Include="npc.h" />
     <ClInclude Include="pc.h" />
     <ClInclude Include="root.h" />
