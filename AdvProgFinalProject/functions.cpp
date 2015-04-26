@@ -25,14 +25,24 @@ Certification of Authenticity:
 //Pre: monster exists
 //Post: player lowers hp value if possible on monster
 //Cite: 
-//Author: 
-void attack(PC pc){ }
+//Author: Ian
+void attack(PC pc){
+	
+	int attackAttempt = 0, damage = 0;
+
+	attackAttempt = roll(20) + pc.getAMods(0);
+
+	damage = roll(10) + pc.getAMods(0);
+
+	cout << "Your attack roll comes out to a " << attackAttempt << " and if it lands, you deal " << damage << " damage!\n";
+
+}
 
 //Purpose: makes a default saves file txt
 //Pre: none
 //Post: creates a txt file with basic default settings
 //Cite: 
-//Author: 
+//Author: Zack
 void buildDefault(){
 	ofstream fout;
 	string tmp = "IAN";
@@ -169,7 +179,7 @@ void DMmenu()
 //Pre: none
 //Post: creates a value of gp
 //Cite: 
-//Author: 
+//Author: Zack
 void generateLoot()
 {
 	srand(time(NULL));
