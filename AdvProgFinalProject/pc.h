@@ -29,7 +29,6 @@ class PC : public Character
 private:
 	int level;
 	string playerClass;
-	Weapon weapon;
 
 public:
 	PC();
@@ -44,6 +43,8 @@ public:
 	int getLevel();
 
 	Armor armor;
+	Weapon weapon;
+	LinkedList inventory;
 
 };
  

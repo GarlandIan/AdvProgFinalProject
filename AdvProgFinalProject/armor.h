@@ -22,7 +22,7 @@ Certification of Authenticity:
 #ifndef ARMOR_H
 #define ARMOR_H
 
-#include"item.h"
+#include"LinkedList.h"
 
 struct Armor
 {

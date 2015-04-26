@@ -1,7 +1,7 @@
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
 
-#include "Root.h"
+#include "item.h"
 
 using namespace std;
 class LinkedList
