@@ -26,14 +26,43 @@ Certification of Authenticity:
 
 struct Weapon
 {
-	string critRange;
+	
 	string damageRoll;
 	string enchant;
+	string name;
 	string special;
 	string type;
+	int critRange[2];
 	int critType;
 	int range;
 	int weight;
+
+	Weapon();
+	Weapon(int c[], string d, string e,string n, string s, string t, int cr, int r, int w);
+	Weapon(const Weapon &w);
+	~Weapon();
+
+
+	void setCritRange(int c[]);
+	void setCritType(int cr);
+	void setDamageRoll(string d);
+	void setEnchant(string e);
+	void setName(string n);
+	void setRange(int r);
+	void setSpecial(string s);
+	void setWeight(int w);
+	void setType(string t);
+	
+	string getDamageRoll();
+	string getEnchant();
+	string getName();
+	string getSpecial();
+	string getType();
+	int getCritRange(int i);
+	int getCritType();
+	int getRange();
+	int setWeight();
+
 };
 
 #endif

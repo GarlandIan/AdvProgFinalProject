@@ -74,6 +74,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="npc.cpp" />
     <ClCompile Include="pc.cpp" />
+    <ClCompile Include="weapon.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="armor.h" />

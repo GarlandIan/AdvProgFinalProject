@@ -45,15 +45,12 @@
     <ClCompile Include="LinkedList3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="weapon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="character.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="armor.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="npc.h">
@@ -78,6 +75,12 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="LinkedList3.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="armor.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="character.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
