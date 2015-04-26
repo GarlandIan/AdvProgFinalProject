@@ -55,12 +55,12 @@ Character::Character(int abil[], int abilM[], int armorC, int s, int hp, int ini
 		abilMod[i] = abilM[i];
 	}
 	armorClass = armorC;
-	alignment = al;
 	speed = s;
 	this->hp = hp;
 	initiative = init;
 	this->saves[3] = saves[3];
 	this->skills[35] = skills[35];
+	alignment = al;
 	this->name = name;
 
 }

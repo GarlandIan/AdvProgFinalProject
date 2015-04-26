@@ -295,6 +295,10 @@ void loadCharacter(PC pc){
 
 	pc.setAlignment(alignTemp);
 
+	cout << pc.getAlignment() << endl;
+
+	system("pause");
+
 	for (int j = 0; j < 6; j++){
 		file >> tmp;
 		file >> ascoresTemp[j];
@@ -399,9 +403,7 @@ void loadCharacter(PC pc){
 
 	pc.armor.setEnchInfo(tmp);
 
-	system("PAUSE");
-
-	while (!file.eof){
+	/*while (!file.eof()){
 
 		file >> tmp;
 
@@ -424,7 +426,7 @@ void loadCharacter(PC pc){
 		getline(file, tmp); //Takes in description
 
 	}
-
+	*/
 	
 }
 

@@ -55,6 +55,8 @@ void generateLoot(); //exclusive to DM
 //functions under new character
 int rollStats();
 
+string determineAlignment(int n);
+
 //Options Menus
 void startingMenu(PC pc);
 void playMenu(PC pc);

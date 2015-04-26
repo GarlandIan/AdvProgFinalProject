@@ -1,6 +1,6 @@
 Version 0.1
 
-int acTemp, initativeTemp, savesTemp[3], skillTemp[35];
+int acTemp, acBonusTemp, initativeTemp, savesTemp[3], skillTemp[35];
 string alignTemp;
 
 .... 
@@ -64,7 +64,49 @@ file >> tmp;
 
 file >> tmp;
 
-pc.
+pc.armor.setType(tmp);
+
+file >> tmp;
+
+file >> intTemp;
+
+pc.armor.setACBon(intTemp);
+
+file >> tmp;
+
+file >> intTemp;
+
+pc.armor.setACPen(intTemp);
+
+file >> tmp;
+
+file >> intTemp;
+
+pc.armor.setMDex(intTemp);
+
+file >> tmp;
+
+file >> intTemp;
+
+pc.armor.setSpeed(intTemp);
+
+file >> tmp;
+
+file >> intTemp;
+
+pc.armor.setWeight(intTemp);
+
+file >> tmp;
+
+file >> tmp;
+
+pc.armor.setEnchant(tmp);
+
+file >> tmp;
+
+file >> tmp;
+
+pc.armor.setEnchInfo(tmp);
 
 .....
 
