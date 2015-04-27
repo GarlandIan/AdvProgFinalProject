@@ -22,7 +22,11 @@ the purpose of future plagiarism checking)
 
 using namespace std;
 
-//add an idex number to a node in the linked list
+//Purpose: add an idex number to a node in the linked list
+//Pre: None
+//Post: node added to the linked lists that are used in load character function
+//Cite: 
+//Author: Kody
 void LinkedList2::add(int thing2)
 {
 	if (head == NULL)
@@ -39,9 +43,12 @@ void LinkedList2::add(int thing2)
 		nodePtr->next = new List2Node(thing2);
 	}
 }
-//index is stored in the order
 
-//The list needs to be displayed in order to show that the indexes are being added to it.
+//Purpose: The list needs to be displayed in order to show that the indexes are being added to it.
+//Pre: None
+//Post: displays list of nodes
+//Cite: 
+//Author: Kody
 void LinkedList2::displayList() const
 {
 	List2Node *nodePtr = head;
@@ -51,9 +58,12 @@ void LinkedList2::displayList() const
 		nodePtr = nodePtr->next;
 	}
 }
-//the current list will be displayed once this is performed.
 
-//The nodes need a way to be removed
+//Purpose: The nodes need a way to be removed
+//Pre: None
+//Post: After the function is performed the first node in the linked list will be removed.
+//Cite: 
+//Author: Kody
 void LinkedList2::remove(int thing2)
 {
 	List2Node *nodePtr, *previousNodePtr;
@@ -82,9 +92,13 @@ void LinkedList2::remove(int thing2)
 		}
 	}
 }
-//After the function is performed the first node in the linked list will be removed.
 
-//destructor that will clear the entire list if not done so that that there isn't extra memory going
+
+//Purpose: destructor that will clear the entire list if not done so that that there isn't extra memory going
+//Pre: None
+//Post: free all memory used from the nodes.
+//Cite: 
+//Author: Kody
 LinkedList2::~LinkedList2()
 {
 	List2Node *nodePtr = head;
