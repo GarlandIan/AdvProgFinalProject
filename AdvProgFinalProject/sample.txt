@@ -28,11 +28,11 @@ Bluff 0
 Climb 0
 Craft 0
 Diplomacy 0
-Disable Device 0
+DisableDevice 0
 Diguise 0
-Escape Artist 0
+EscapeArtist 0
 Fly 0
-Handle Animal 0
+HandleAnimal 0
 Heal 0
 Intimidate 0
 kArcana 0
