@@ -32,7 +32,7 @@ int main(){
 
 	cout << testPlayer.getAlignment();
 
-	system("pause");
+	//system("pause");
 
 	startingMenu(testPlayer, items, itemz);
 

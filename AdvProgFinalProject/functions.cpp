@@ -1159,7 +1159,7 @@ void loadCharacter(PC pc, string items[], double itemz[]){
 
 	int acTemp, acBonusTemp, initativeTemp = 0, savesTemp[3], skillTemp[35], intTemp, ascoresTemp[6], iPrice, iAmount;
 
-	double dubTemp, modTemp[6], iWeight;
+	double modTemp[6], iWeight;
 
 	string tmp, alignTemp, item, iName, iDesc;
 	LinkedList itemNames;
@@ -1233,21 +1233,24 @@ void loadCharacter(PC pc, string items[], double itemz[]){
 	file >> initativeTemp; //storing as temp for later configuration
 
 	file >> tmp;
+	for (int y = 0; y < 3; y++)
+	{
+		file >> savesTemp[y]; //storing as temp for later config
+		if (y == 2)
+		{
+			break;
+		}
+		file >> tmp;
 
-	file >> savesTemp[1]; //storing as temp for later config
+	}
 
-	file >> tmp;
-
-	file >> savesTemp[2]; //for later config
-
-	file >> tmp;
-
-	file >> savesTemp[3]; //for later config
+	pc.setSaves(savesTemp);
 
 	for (int k = 0; k < 35; k++){
 		file >> tmp;
 		file >> skillTemp[k];
 	}
+	pc.setSaves(skillTemp);
 
 	file >> tmp;
 
@@ -1342,7 +1345,7 @@ void loadCharacter(PC pc, string items[], double itemz[]){
 	cout << endl;
 	itemDescs.displayList();
 	cout << endl;
-	
+	file.close();
 	system("pause");
 }
 

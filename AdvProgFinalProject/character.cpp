@@ -59,7 +59,10 @@ Character::Character(int abil[], int abilM[], int armorC, int s, int hp, int ini
 	speed = s;
 	this->hp = hp;
 	initiative = init;
-	this->saves[saveSize] = saves[saveSize];
+	for (int j = 0; j < saveSize; j ++)
+	{
+		this->saves[j] = saves[j];
+	}
 	this->skills[skillSize] = skills[skillSize];
 	alignment = al;
 	race = r;
