@@ -22,13 +22,11 @@ Certification of Authenticity:
 #include"header.h"
 
 int main(){
-
 	string items[1000];
 	double itemz[1000];
 
 	PC testPlayer;
-
-	loadCharacter(testPlayer, items, itemz);
+	cin >> testPlayer;
 
 	cout << testPlayer.getAlignment();
 

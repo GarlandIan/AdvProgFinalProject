@@ -1735,3 +1735,10 @@ int rollStats(){
 
 	return statRoll;
 }
+
+void operator >>(istream& in, PC pc)
+{
+	string items[1000];
+	double itemz[1000];
+	loadCharacter(pc, items, itemz);
+}

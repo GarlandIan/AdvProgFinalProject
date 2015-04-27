@@ -64,4 +64,7 @@ void startingMenu(PC pc, string items[], double itemz[]);
 //random number generator code
 int roll(int diceNumber);
 
+//overload function
+void operator >>(istream& in, PC pc);
+
 #endif
