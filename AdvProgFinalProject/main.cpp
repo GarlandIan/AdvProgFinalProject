@@ -32,7 +32,7 @@ int main(){
 
 	PC * yolo= &testPlayer;
 
-	cout << "\n" << yolo->getWeight() << "\n" << endl;
+	cout << "\n" << "Weapon Weight = " << yolo->getWeight() << ": Your weapon is your fists silly!" << "\n" << endl;
 
 	cout << testPlayer.getAlignment();
 
