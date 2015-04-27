@@ -1553,7 +1553,7 @@ void rollSaves(PC pc){
 
 	if (tmp == 4){ return; }
 
-	attempt = roll(pc.getSaves(tmp - 1));
+	attempt = roll(20) + pc.getSaves(tmp - 1);
 
 	cout << "You rolled a " << attempt << "!" << endl;
 
