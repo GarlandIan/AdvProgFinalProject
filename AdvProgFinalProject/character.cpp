@@ -25,7 +25,7 @@ Certification of Authenticity:
 //Pre: none
 //Post: makes defualt constuctor
 //Cite: 
-//Author: 
+//Author: Ian, Zach
 Character::Character(){
 	for (int i = 0; i < aScoreSize; i++){
 		abilScores[i] = 0;
@@ -48,7 +48,7 @@ Character::Character(){
 //Pre: none
 //Post: makes simple constuctor
 //Cite: 
-//Author: 
+//Author: Zach, Kody
 Character::Character(int abil[], int abilM[], int armorC, int s, int hp, int init, int saves[], double skills[], string al, string r, string name)
 {
 	for (int i = 0; i < aScoreSize; i++){
@@ -74,7 +74,7 @@ Character::Character(int abil[], int abilM[], int armorC, int s, int hp, int ini
 //Pre: none
 //Post: makes one instance of Character upon another
 //Cite: 
-//Author: 
+//Author: Zach, Kody
 Character::Character(const Character &c)
 {
 
@@ -98,7 +98,7 @@ Character::Character(const Character &c)
 //Pre: none
 //Post: destruct-inates
 //Cite: 
-//Author: 
+//Author: Zach, Kody
 Character::~Character(){
 	for (int i = 0; i < aScoreSize; i++){
 		abilScores[i] = 0;
@@ -122,7 +122,7 @@ Character::~Character(){
 //Pre: input value
 //Post: sets value of alignment
 //Cite: 
-//Author: 
+//Author: Ian
 void Character::setAlignment(string al){
 
 	alignment = al;
@@ -133,7 +133,7 @@ void Character::setAlignment(string al){
 //Pre: input value
 //Post: sets value of ability scores
 //Cite: 
-//Author: 
+//Author: Ian
 void Character::setAScores(int scores[]){
 
 	for (int i = 0; i < 6; i++){
@@ -146,7 +146,7 @@ void Character::setAScores(int scores[]){
 //Pre: input value
 //Post: sets value of ability mods
 //Cite: 
-//Author: 
+//Author: Ian
 void Character::setAMods(double amods[]){
 	for (int i = 0; i < 6; i++){
 		abilMod[i] = amods[i];
@@ -158,7 +158,7 @@ void Character::setAMods(double amods[]){
 //Pre: input value
 //Post: sets value of armor class
 //Cite: 
-//Author: 
+//Author: Ian
 void Character::setAClass(int ac){
 
 	armorClass = ac;
@@ -170,7 +170,7 @@ void Character::setAClass(int ac){
 //Pre: input value
 //Post: sets value of health points
 //Cite: 
-//Author: 
+//Author: Ian
 void Character::setHP(int h){
 
 	hp = h;
@@ -181,7 +181,7 @@ void Character::setHP(int h){
 //Pre: input value
 //Post: sets value of initiative
 //Cite: 
-//Author: 
+//Author: Ian
 void Character::setInit(int i){
 
 	initiative = i;
@@ -192,7 +192,7 @@ void Character::setInit(int i){
 //Pre: input value
 //Post: sets value of name
 //Cite: 
-//Author: 
+//Author: Ian
 void Character::setName(string n){
 
 	name = n;
@@ -203,7 +203,7 @@ void Character::setName(string n){
 //Pre: input value
 //Post: sets value of race
 //Cite: 
-//Author: 
+//Author: Ian
 void Character::setRace(string r){
 
 	race = r;
@@ -214,7 +214,7 @@ void Character::setRace(string r){
 //Pre: input value
 //Post: sets value of saves
 //Cite: 
-//Author:  
+//Author:  Ian
 void Character::setSaves(int sa[]){
 
 	saves[0] = sa[0];
@@ -227,7 +227,7 @@ void Character::setSaves(int sa[]){
 //Pre: input value
 //Post: sets value of skills 
 //Cite: 
-//Author: 
+//Author: Ian
 void Character::setSkills(double skillStats[]){
 
 	for (int i = 0; i < skillSize; i++)
@@ -239,7 +239,7 @@ void Character::setSkills(double skillStats[]){
 //Pre: input value
 //Post: sets value of speed
 //Cite: 
-//Author: 
+//Author: Ian
 void Character::setSpeed(int s){
 
 	speed = s;
@@ -250,7 +250,7 @@ void Character::setSpeed(int s){
 //Pre: input value
 //Post: returns value of an ability score
 //Cite: 
-//Author: 
+//Author: Ian
 int Character::getAScores(int i){
 	
 		return abilScores[i];
@@ -261,7 +261,7 @@ int Character::getAScores(int i){
 //Pre: input value
 //Post: returns value of an ability mod
 //Cite: 
-//Author: 
+//Author: Ian
 int Character::getAMods(int i){
 
 	return abilMod[i];
@@ -272,7 +272,7 @@ int Character::getAMods(int i){
 //Pre: none
 //Post: returns value of armor class
 //Cite: 
-//Author: 
+//Author: Ian
 int Character::getAClass(){
 
 	return armorClass;
@@ -283,7 +283,7 @@ int Character::getAClass(){
 //Pre: none
 //Post: returns value of health points
 //Cite: 
-//Author: 
+//Author: Ian
 int Character::getHP(){
 
 	return hp;
@@ -294,7 +294,7 @@ int Character::getHP(){
 //Pre: none
 //Post: returns value of initative
 //Cite: 
-//Author: 
+//Author: Ian
 int Character::getInit(){
 
 	return initiative;
@@ -305,7 +305,7 @@ int Character::getInit(){
 //Pre: input value
 //Post: returns value of a save
 //Cite: 
-//Author: 
+//Author: Ian
 int Character::getSaves(int i){
 
 		return saves[i];
@@ -316,7 +316,7 @@ int Character::getSaves(int i){
 //Pre: input values
 //Post: returns value of a save
 //Cite: 
-//Author: 
+//Author: Ian
 double Character::getSkills(int i){
 
 		return skills[i];
@@ -327,7 +327,7 @@ double Character::getSkills(int i){
 //Pre: none
 //Post: returns value of speed
 //Cite: 
-//Author:  
+//Author:  Ian
 int Character::getSpeed(){
 
 	return speed;
@@ -338,7 +338,7 @@ int Character::getSpeed(){
 //Pre: none
 //Post: returns value of alignment
 //Cite: 
-//Author: 
+//Author: Ian
 string Character::getAlignment(){
 
 	return alignment;
@@ -349,7 +349,7 @@ string Character::getAlignment(){
 //Pre: none
 //Post: returns value of race
 //Cite: 
-//Author: 
+//Author: Ian
 string Character::getRace(){
 
 	return race;
@@ -360,7 +360,7 @@ string Character::getRace(){
 //Pre: none
 //Post: returns value of name
 //Cite: 
-//Author: 
+//Author: Ian
 string Character::getName(){
 
 	return name;

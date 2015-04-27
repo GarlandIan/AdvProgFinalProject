@@ -42,7 +42,7 @@ void attack(PC pc){
 //Pre: none
 //Post: creates a txt file with basic default settings
 //Cite: 
-//Author: Zack
+//Author: Zach
 void buildDefault(){
 	ofstream fout;
 	string tmp = "IAN";
@@ -166,7 +166,7 @@ void DMmenu()
 //Pre: none
 //Post: creates a value of gp
 //Cite: 
-//Author: Zack
+//Author: Zach
 void generateLoot()
 {
 	srand(time(NULL));
@@ -1152,7 +1152,7 @@ void initiativeCheck(PC pc)
 //Pre: txt file that contains character exists
 //Post: stores data from txt file into system
 //Cite: 
-//Author: 
+//Author: Ian, Zach, Kody
 void loadCharacter(PC pc, string items[], double itemz[]){
 
 	ifstream file;
@@ -1353,7 +1353,7 @@ void loadCharacter(PC pc, string items[], double itemz[]){
 //Pre: none
 //Post: changes value of health
 //Cite: 
-//Author: 
+//Author: Ian
 void manageHealth(PC pc){
 
 	int tmp = 0, h = 0, temph = pc.getHP();
@@ -1536,7 +1536,7 @@ void playMenu(PC testPlayer, string items[], double itemz[])
 //Pre: none
 //Post: gives stats to saves
 //Cite: 
-//Author: 
+//Author: Ian
 void rollSaves(PC pc){
 
 	int tmp = -1, attempt = 0;
@@ -1563,7 +1563,7 @@ void rollSaves(PC pc){
 //Pre: none
 //Post: gives stats to skills
 //Cite: 
-//Author: 
+//Author: Ian
 void rollSkills(PC pc){
 
 	int input = 0, dieRoll = 0;
@@ -1642,7 +1642,7 @@ void startingMenu(PC testPlayer, string items[], double itemz[])
 //Pre: input value
 //Post: sets value for allignment
 //Cite: 
-//Author: 
+//Author: Ian
 string determineAlignment(int n){
 
 	string tmp;
@@ -1685,7 +1685,7 @@ string determineAlignment(int n){
 //Pre: input value
 //Post: returns random number
 //Cite: 
-//Author: 
+//Author: Zach
 int roll(int diceNumber)
 {
 	srand(time(NULL));
@@ -1699,7 +1699,7 @@ int roll(int diceNumber)
 //Pre: none
 //Post: sets value for other variables
 //Cite: 
-//Author: 
+//Author: Ian
 int rollStats(){
 
 	int statRoll = 0, tmp = 0, dice[4];
