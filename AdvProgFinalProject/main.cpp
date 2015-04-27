@@ -23,15 +23,18 @@ Certification of Authenticity:
 
 int main(){
 
+	string items[1000];
+	double itemz[1000];
+
 	PC testPlayer;
 
-	loadCharacter(testPlayer);
+	loadCharacter(testPlayer, items, itemz);
 
 	cout << testPlayer.getAlignment();
 
 	system("pause");
 
-	startingMenu(testPlayer);
+	startingMenu(testPlayer, items, itemz);
 
 	cout << "Work.";
 

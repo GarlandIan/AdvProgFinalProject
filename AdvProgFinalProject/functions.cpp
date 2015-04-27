@@ -117,6 +117,20 @@ void buildDefault(){
 		<< "Weight: " << "20" << endl //armor.weight
 		<< "Enchantment: " << "none" << endl //armor.enchant
 		<< "EnchantmentInfo: " << "-----" << endl; //armor.enchantInfo
+	
+	for (int i = 0; i < 3; i++)
+	{
+		fout << endl
+			 << "Item" << endl
+			 << tmp << endl //items[i]
+			 << "Weight" << num2 << endl // itemz[i]
+			 << "Price" << num2 << endl // itemz[i+1]
+			 << "Amount" << num2 << endl // itemz[i+2]
+			 << tmp << endl;
+	}
+
+
+		
 }
 
 //Purpose: change character
@@ -1166,7 +1180,7 @@ void initiativeCheck(PC pc)
 //Post: stores data from txt file into system
 //Cite: 
 //Author: 
-void loadCharacter(PC pc){
+void loadCharacter(PC pc, string items[], double itemz[]){
 
 	ifstream file;
 
@@ -1312,32 +1326,37 @@ void loadCharacter(PC pc){
 
 	for(int z = 0; z < 3; z++){
 
-	file >> tmp;
+		file >> tmp;
 
-	file.ignore();
+		file.ignore();
 
-	getline(file, iName); //Takes in name
-	itemNames.add(iName);
+		getline(file, iName); //Takes in name
+		itemNames.add(iName);
+		items[z] = iName;
 
-	file >> tmp;
+		file >> tmp;
 
-	file >> iWeight; //Takes in weight integer
-	itemWeights.add(iWeight);
+		file >> iWeight; //Takes in weight integer
+		itemWeights.add(iWeight);
+		itemz[z] = iWeight;
 
-	file >> tmp;
+		file >> tmp;
 
-	file >> iPrice; //Takes in price
-	itemPrices.add(iPrice);
+		file >> iPrice; //Takes in price
+		itemPrices.add(iPrice);
+		itemz[z + 1] = iPrice;
 
-	file >> tmp;
+		file >> tmp;
 
-	file >> iAmount; //Takes in amount
-	itemAmounts.add(iAmount);
+		file >> iAmount; //Takes in amount
+		itemAmounts.add(iAmount);
+		itemz[z + 2] = iAmount;
 
-	file.ignore();
+		file.ignore();
 
-	getline(file, iDesc); //Takes in description
-	itemDescs.add(iDesc);
+		getline(file, iDesc); //Takes in description
+		itemDescs.add(iDesc);
+		items[z + 1] = iDesc;
 
 	}
 	itemNames.displayList();
@@ -1416,7 +1435,7 @@ void manageHealth(PC pc){
 //Post: gives user a menu
 //Cite: 
 //Author: Kody
-void manageMenu(PC testPlayer)
+void manageMenu(PC testPlayer, string items[], double itemz[])
 {
 	int user_choice5 = -1;
 	while (user_choice5 < 0 || user_choice5 > 5)
@@ -1434,37 +1453,37 @@ void manageMenu(PC testPlayer)
 	{
 		cout << "Returning to starting menu.\n";
 		system("pause");
-		outsideMenu(testPlayer);
+		outsideMenu(testPlayer, items, itemz);
 	}
 	if (user_choice5 == 1)
 	{
 		changeCharacter(testPlayer);
 		system("pause");
-		manageMenu(testPlayer);
+		manageMenu(testPlayer,items, itemz);
 	}
 	if (user_choice5 == 2)
 	{
-		loadCharacter(testPlayer);
+		loadCharacter(testPlayer, items, itemz);
 		system("pause");
-		manageMenu(testPlayer);
+		manageMenu(testPlayer, items, itemz);
 	}
 	if (user_choice5 == 3)
 	{
 		buildDefault();
 		system("pause");
-		manageMenu(testPlayer);
+		manageMenu(testPlayer, items, itemz);
 	}
 	if (user_choice5 == 4)
 	{
 		newCharacter(testPlayer);
 		system("pause");
-		manageMenu(testPlayer);
+		manageMenu(testPlayer, items, itemz);
 	}
 	if (user_choice5 == 5)
 	{
 		deleteCharacter();
 		system("pause");
-		manageMenu(testPlayer);
+		manageMenu(testPlayer, items, itemz);
 	}
 }
 
@@ -1480,7 +1499,7 @@ void newCharacter(PC pc){ }
 //Post: another menu for player
 //Cite: 
 //Author: Kody
-void outsideMenu(PC testPlayer)
+void outsideMenu(PC testPlayer, string items[], double itemz[])
 {
 	int user_choice2 = -1;
 	while (user_choice2 < 0 || user_choice2 > 2)
@@ -1498,11 +1517,11 @@ void outsideMenu(PC testPlayer)
 	}
 	if (user_choice2 == 1)
 	{
-		playMenu(testPlayer);
+		playMenu(testPlayer, items, itemz);
 	}
 	if (user_choice2 == 2)
 	{
-		manageMenu(testPlayer);
+		manageMenu(testPlayer, items, itemz);
 	}
 }
 
@@ -1518,7 +1537,7 @@ void playAsMonster(){ }
 //Post: another menu for user
 //Cite: 
 //Author: Kody
-void playMenu(PC testPlayer)
+void playMenu(PC testPlayer, string items[], double itemz[])
 {
 	int user_choice4 = -1;
 	while (user_choice4 < 0 || user_choice4 > 5)
@@ -1536,37 +1555,37 @@ void playMenu(PC testPlayer)
 	{
 		cout << "Returning to starting menu.\n";
 		system("pause");
-		outsideMenu(testPlayer);
+		outsideMenu(testPlayer, items, itemz);
 	}
 	if (user_choice4 == 1)
 	{
 		initiativeCheck(testPlayer);
 		system("pause");
-		playMenu(testPlayer);
+		playMenu(testPlayer, items, itemz);
 	}
 	if (user_choice4 == 2)
 	{
 		attack(testPlayer);
 		system("pause");
-		playMenu(testPlayer);
+		playMenu(testPlayer,items, itemz);
 	}
 	if (user_choice4 == 3)
 	{
 		manageHealth(testPlayer);
 		system("pause");
-		playMenu(testPlayer);
+		playMenu(testPlayer, items, itemz);
 	}
 	if (user_choice4 == 4)
 	{
 		rollSaves(testPlayer);
 		system("pause");
-		playMenu(testPlayer);
+		playMenu(testPlayer, items, itemz);
 	}
 	if (user_choice4 == 5)
 	{
 		rollSkills(testPlayer);
 		system("pause");
-		playMenu(testPlayer);
+		playMenu(testPlayer,items, itemz);
 	}
 }
 
@@ -1638,7 +1657,7 @@ void rollSkills(PC pc){
 //Post: another menu for user
 //Cite: 
 //Author: Kody
-void startingMenu(PC testPlayer)
+void startingMenu(PC testPlayer, string items[], double itemz[])
 {
 	int user_choice = -1;
 	do{
@@ -1659,7 +1678,7 @@ void startingMenu(PC testPlayer)
 		}
 		if (user_choice == 1)
 		{
-			outsideMenu(testPlayer);
+			outsideMenu(testPlayer, items, itemz);
 		}
 		if (user_choice == 2)
 		{

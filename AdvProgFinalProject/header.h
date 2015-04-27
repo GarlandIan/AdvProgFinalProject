@@ -46,7 +46,7 @@ void rollSkills(PC pc);
 void buildDefault();
 void changeCharacter(PC pc);
 void deleteCharacter();
-void loadCharacter(PC pc);
+void loadCharacter(PC pc, string items[], double itemz[]);
 void newCharacter(PC pc);
 //outside of play activated through a manage command and exclusive to DM
 void generateLoot();
@@ -61,10 +61,10 @@ string determineAlignment(int n);
 
 //Options Menus
 void DMmenu();
-void manageMenu(PC pc);
-void outsideMenu(PC pc);
-void playMenu(PC pc);
-void startingMenu(PC pc);
+void manageMenu(PC pc, string items[], double itemz[]);
+void outsideMenu(PC pc, string items[], double itemz[]);
+void playMenu(PC pc,string items[], double itemz[]);
+void startingMenu(PC pc, string items[], double itemz[]);
 
 //random number generator code
 int roll(int diceNumber);
