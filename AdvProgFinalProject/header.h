@@ -44,14 +44,9 @@ void rollSkills(PC pc);
 
 //outside of play activated through a manage command
 void buildDefault();
-void changeCharacter(PC pc);
-void deleteCharacter();
 void loadCharacter(PC pc, string items[], double itemz[]);
-void newCharacter(PC pc);
 //outside of play activated through a manage command and exclusive to DM
 void generateLoot();
-void playAsMonster();
-void searchMonsters(); 
 
 //functions under new character
 int abilityModSet(int n);

@@ -133,19 +133,6 @@ void buildDefault(){
 		
 }
 
-//Purpose: change character
-//Pre: none
-//Post: changes character
-//Cite: 
-//Author: 
-void changeCharacter(PC pc){ }
-
-//Purpose: delete a character
-//Pre: character exists
-//Post: restores character file to default settings
-//Cite: 
-//Author: 
-void deleteCharacter(){ }
 
 //Purpose: gives exluded menu to dm
 //Pre: none
@@ -155,13 +142,11 @@ void deleteCharacter(){ }
 void DMmenu()
 {
 	int user_choice3 = -1;
-	while (user_choice3 < 0 || user_choice3 > 3)
+	while (user_choice3 < 0 || user_choice3 > 1)
 	{
 		cout << "Dungeon Master: What would you like to do?\n";
 		cout << "0 - Back to Starting Menu\n";
-		cout << "1 - Search for Monsters\n";
-		cout << "2 - Play As Monster\n";
-		cout << "3 - Generate Loot\n";
+		cout << "1 - Generate Loot\n";
 		cin >> user_choice3;
 	}
 	if (user_choice3 == 0)
@@ -170,18 +155,6 @@ void DMmenu()
 		system("pause");
 	}
 	if (user_choice3 == 1)
-	{
-		searchMonsters();
-		system("pause");
-		DMmenu();
-	}
-	if (user_choice3 == 2)
-	{
-		playAsMonster();
-		system("pause");
-		DMmenu();
-	}
-	if (user_choice3 == 3)
 	{
 		generateLoot();
 		system("pause");
@@ -1438,15 +1411,12 @@ void manageHealth(PC pc){
 void manageMenu(PC testPlayer, string items[], double itemz[])
 {
 	int user_choice5 = -1;
-	while (user_choice5 < 0 || user_choice5 > 5)
+	while (user_choice5 < 0 || user_choice5 > 2)
 	{
 		cout << "Player(Manage Mode): What would you like to do?\n";
 		cout << "0 - Back to Starting Menu\n";
-		cout << "1 - Change Character\n";
+		cout << "1 - Build Default\n";
 		cout << "2 - Load Character\n";
-		cout << "3 - Build Default\n";
-		cout << "4 - Create New Character\n";
-		cout << "5 - Delete A Character\n";
 		cin >> user_choice5;
 	}
 	if (user_choice5 == 0)
@@ -1457,7 +1427,7 @@ void manageMenu(PC testPlayer, string items[], double itemz[])
 	}
 	if (user_choice5 == 1)
 	{
-		changeCharacter(testPlayer);
+		buildDefault();
 		system("pause");
 		manageMenu(testPlayer,items, itemz);
 	}
@@ -1467,32 +1437,8 @@ void manageMenu(PC testPlayer, string items[], double itemz[])
 		system("pause");
 		manageMenu(testPlayer, items, itemz);
 	}
-	if (user_choice5 == 3)
-	{
-		buildDefault();
-		system("pause");
-		manageMenu(testPlayer, items, itemz);
-	}
-	if (user_choice5 == 4)
-	{
-		newCharacter(testPlayer);
-		system("pause");
-		manageMenu(testPlayer, items, itemz);
-	}
-	if (user_choice5 == 5)
-	{
-		deleteCharacter();
-		system("pause");
-		manageMenu(testPlayer, items, itemz);
-	}
 }
 
-//Purpose: make a new character
-//Pre: none
-//Post: makes new character
-//Cite: 
-//Author: 
-void newCharacter(PC pc){ }
 
 //Purpose: menu
 //Pre: none
@@ -1525,12 +1471,6 @@ void outsideMenu(PC testPlayer, string items[], double itemz[])
 	}
 }
 
-//Purpose: allows DM to be monster
-//Pre: none
-//Post: DM becomes monster
-//Cite: 
-//Author: 
-void playAsMonster(){ }
 
 //Purpose: menu
 //Pre: none
@@ -1694,13 +1634,6 @@ void startingMenu(PC testPlayer, string items[], double itemz[])
 		}
 	} while (user_choice);
 }
-
-//Purpose: searchs for a monster
-//Pre: none
-//Post: returns monster
-//Cite: 
-//Author: 
-void searchMonsters(){ }
 
 //Purpose: setting stat for allignment
 //Pre: input value
