@@ -1366,8 +1366,8 @@ void loadCharacter(PC pc, string items[], double itemz[]){
 //Author: Ian
 void manageHealth(PC pc){
 
-	int tmp = 0, h = 0, temph = pc.getHP();
-	while (tmp < 1 || tmp < 3){
+	int tmp = -1, h = 0, temph = pc.getHP();
+	while (tmp < 1 || tmp > 3){
 		cout << "Enter the number for the corresponding option you wish to activate\n\n"
 			<< "1. Gain Health\n"
 			<< "2. Lose Health\n"
@@ -1826,10 +1826,9 @@ int rollStats(PC pc){
 			statRoll += dice[i];
 		}
 
-		cout << "You rolled a " << dice[0] << ", a " << dice[1] << ", a" << dice[2] << ", and a" << dice[3] << endl
-			<< "We will add the three highest rolls and set that as your stat.\n";
-
-		pc.setSkills[i] = statRoll;
+		//cout << "You rolled a " << dice[0] << ", a " << dice[1] << ", a" << dice[2] << ", and a" << dice[3] << endl
+			//<< "We will add the three highest rolls and set that as your stat.\n";
+		//pc.setSkills[i] = statRoll;
 	}
 
 	return statRoll;
