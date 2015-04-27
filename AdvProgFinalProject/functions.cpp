@@ -1335,18 +1335,21 @@ void loadCharacter(PC pc, string items[], double itemz[]){
 		items[z + 1] = iDesc;
 
 	}
+	cout << "Players Start Out With the Following Items: \n";
+	cout << "Names: \n";
 	itemNames.displayList();
 	cout << endl;
+	cout << "Weights of Each Item (in pounds): \n";
 	itemWeights.displayList();
 	cout << endl;
+	cout << "Prices of Each Item (in gold): \n";
 	itemPrices.displayList();
 	cout << endl;
+	cout << "How many of each item a player has: \n";
 	itemAmounts.displayList();
 	cout << endl;
-	itemDescs.displayList();
 	cout << endl;
 	file.close();
-	system("pause");
 }
 
 //Purpose: change the value of health
