@@ -14,6 +14,8 @@ dodge something or take less damage), etc... As said earlier it is to be used to
 Dungeon Master and Players regularly.  Players of this game understand the meaning of roles and Dungeon Masters are the ones who outside of this program determine
 how the rolls effect the Players.
 
+Credit:  All credit of Information used to calculate formulas and determine formats goes to www.d20pfsrd.com (an official Pathfinder database website)
+
 Certification of Authenticity:
    I certify that this is entirely my own work, except where I have given fully-
    documented references to the work of others. I understand the definition and
