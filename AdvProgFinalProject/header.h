@@ -61,6 +61,10 @@ void outsideMenu(PC pc, string items[], double itemz[]);
 void playMenu(PC pc,string items[], double itemz[]);
 void startingMenu(PC pc, string items[], double itemz[]);
 
+
+//stroring data:
+void storeData(PC pc, string items[], double itemz[]);
+
 //random number generator code
 int roll(int diceNumber);
 

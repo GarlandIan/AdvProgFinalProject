@@ -1620,6 +1620,7 @@ void startingMenu(PC testPlayer, string items[], double itemz[])
 		{
 			cout << "Goodbye!\n";
 			system("pause");
+			storeData(testPlayer, items, itemz);
 			exit(1);
 		}
 		if (user_choice == 1)
@@ -1639,6 +1640,87 @@ void startingMenu(PC testPlayer, string items[], double itemz[])
 			cin >> user_choice;
 		}
 	} while (user_choice);
+}
+
+void storeData(PC pc, string items[], double itemz[])
+{
+	ofstream fout;
+	string tmp = "IAN";
+	int num = 10;
+	int num2 = 0;
+	
+	fout.open("You.txt");
+
+	fout << "PlayerName: " << pc.getName() << endl //character.getName()
+		<< "Level: " << pc.getLevel() << endl //pc.getLevel()
+		<< "Class: " << pc.getPClass() << endl//pc.getPClass()
+		<< "Alignment:" << pc.getAlignment() << endl// character.getAlignment()
+		<< endl
+		<< "Str: " << pc.getAScores(0) << endl// character.getAScores(int num) for next six.
+		<< "Dex: " << pc.getAScores(1) << endl
+		<< "Con: " << pc.getAScores(2) << endl
+		<< "Int: " << pc.getAScores(3) << endl
+		<< "Wis: " << pc.getAScores(4) << endl
+		<< "Cha: " << pc.getAScores(5) << endl
+		<< endl
+		<< "HP: " << pc.getHP() << endl// character.getHP()
+		<< "AC: " << pc.getAClass() << endl// character.getACLass()
+		<< endl
+		<< "Speed: " << pc.getSpeed() << endl// character.getSpeed()
+		<< endl
+		<< "Initiative: " << pc.getInit() << endl// character.getInit()
+		<< endl
+		<< "Fortitude: " << pc.getSaves(0) << endl// character.getSaves(int num) for next 3.
+		<< "Reflex: " << pc.getSaves(1) << endl
+		<< "Will: " << pc.getSaves(2) << endl
+		<< endl
+		<< "Acrobatics: " << pc.getSkills(0) << endl// character.getSkills(int num) for next 35.
+		<< "Appraise: " << pc.getSkills(1) << endl
+		<< "Bluff: " << pc.getSkills(2) << endl
+		<< "Climb: " << pc.getSkills(3) << endl
+		<< "Craft: " << pc.getSkills(4) << endl
+		<< "Diplomacy: " << pc.getSkills(5) << endl
+		<< "Disable Device: " << pc.getSkills(6) << endl
+		<< "Disguise: " << pc.getSkills(7) << endl
+		<< "Escape Artist: " << pc.getSkills(8) << endl
+		<< "Fly: " << pc.getSkills(9) << endl
+		<< "Handle Animal: " << pc.getSkills(10) << endl
+		<< "Heal: " << pc.getSkills(11) << endl
+		<< "Intimidate: " << pc.getSkills(11) << endl
+		<< "KArcana: " << pc.getSkills(12) << endl
+		<< "KDungeoneering: " << pc.getSkills(13) << endl
+		<< "KEngingeering: " << pc.getSkills(14) << endl
+		<< "KGeography: " << pc.getSkills(15) << endl
+		<< "KHistory: " << pc.getSkills(16) << endl
+		<< "KLocal: " << pc.getSkills(17) << endl
+		<< "KNature: " << pc.getSkills(18) << endl
+		<< "KNobility: " << pc.getSkills(19) << endl
+		<< "KPlanes: " << pc.getSkills(20) << endl
+		<< "KReligion: " << pc.getSkills(21) << endl
+		<< "Linguistics: " << pc.getSkills(22) << endl
+		<< "Perception: " << pc.getSkills(23) << endl
+		<< "Perform: " << pc.getSkills(24) << endl
+		<< "Profession: " << pc.getSkills(25) << endl
+		<< "Ride: " << pc.getSkills(26) << endl
+		<< "SenseMotive: " << pc.getSkills(27) << endl
+		<< "SleightofHand: " << pc.getSkills(28) << endl
+		<< "Spellcraft: " << pc.getSkills(29) << endl
+		<< "Stealth: " << pc.getSkills(30) << endl
+		<< "Survival: " << pc.getSkills(32) << endl
+		<< "Swim: " << pc.getSkills(33) << endl
+		<< "UseMagicDevice: " << pc.getSkills(34) << endl
+		<< endl
+		<< "Armor" << endl
+		<< pc.armor.getType() << endl // armor.type
+		<< "AC: " << pc.armor.getACBon() << endl //armor.acBonus
+		<< "ArmorCheckPen: " << pc.armor.getACPen() << endl //armor.acPenalty
+		<< "MaxDex: " << pc.armor.getMDex() << endl //armor.mDexBonus
+		//<< "Speed: " << pc.armor.getSpeed() << endl //armor.speed
+		<< "Weight: " << pc.armor.getWeight() << endl //armor.weight
+		<< "Enchantment: " << pc.armor.getEnchant() << endl //armor.enchant
+		<< "EnchantmentInfo: " << pc.armor.getEchInfo() << endl; //armor.enchantInfo
+
+	fout.close();
 }
 
 //Purpose: setting stat for allignment
