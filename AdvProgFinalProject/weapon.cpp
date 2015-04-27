@@ -71,7 +71,7 @@ Weapon::Weapon(int critRange[], string d, string e, string n, string s, string t
 Weapon::Weapon(const Weapon &w)
 {
 	damageRoll = w.damageRoll;
-	enchant = w.getCritRange;
+	enchant = w.enchant;
 	name = w.name;
 	special = w.special;
 	type = w.type;

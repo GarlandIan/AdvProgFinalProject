@@ -1170,7 +1170,7 @@ void loadCharacter(PC pc){
 
 	ifstream file;
 
-	int acTemp, acBonusTemp, initativeTemp, savesTemp[3], skillTemp[35], intTemp, ascoresTemp[6], iPrice, iAmount;
+	int acTemp, acBonusTemp, initativeTemp = 0, savesTemp[3], skillTemp[35], intTemp, ascoresTemp[6], iPrice, iAmount;
 
 	double dubTemp, modTemp[6], iWeight;
 
@@ -1212,10 +1212,6 @@ void loadCharacter(PC pc){
 
 	pc.setAlignment(alignTemp);
 
-	//cout << pc.getAlignment() << endl;
-
-	system("pause");
-
 	for (int j = 0; j < 6; j++){
 		file >> tmp;
 		file >> ascoresTemp[j];
@@ -1231,8 +1227,6 @@ void loadCharacter(PC pc){
 
 	file >> tmp;
 
-	file >> tmp;
-
 	file >> intTemp;
 
 	pc.setHP(intTemp);
@@ -1243,19 +1237,13 @@ void loadCharacter(PC pc){
 
 	file >> tmp;
 
-	file >> tmp;
-
 	file >> intTemp;
 
 	pc.setSpeed(intTemp);
 
 	file >> tmp;
 
-	file >> tmp;
-
 	file >> initativeTemp; //storing as temp for later configuration
-
-	file >> tmp;
 
 	file >> tmp;
 
@@ -1269,14 +1257,10 @@ void loadCharacter(PC pc){
 
 	file >> savesTemp[3]; //for later config
 
-	file >> tmp;
-
 	for (int k = 0; k < 35; k++){
 		file >> tmp;
 		file >> skillTemp[k];
 	}
-
-	file >> tmp;
 
 	file >> tmp;
 
@@ -1326,11 +1310,11 @@ void loadCharacter(PC pc){
 
 	pc.armor.setEnchInfo(tmp);
 
-	/*while (!file.eof()){
+	for(int z = 0; z < 3; z++){
 
-	file >> item;
+	file >> tmp;
 
-	file >> iName;
+	file.ignore();
 
 	getline(file, iName); //Takes in name
 	itemNames.add(iName);
@@ -1350,6 +1334,8 @@ void loadCharacter(PC pc){
 	file >> iAmount; //Takes in amount
 	itemAmounts.add(iAmount);
 
+	file.ignore();
+
 	getline(file, iDesc); //Takes in description
 	itemDescs.add(iDesc);
 
@@ -1364,8 +1350,8 @@ void loadCharacter(PC pc){
 	cout << endl;
 	itemDescs.displayList();
 	cout << endl;
-	*/
-
+	
+	system("pause");
 }
 
 //Purpose: change the value of health
