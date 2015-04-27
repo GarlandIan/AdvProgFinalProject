@@ -25,8 +25,14 @@ int main(){
 	string items[1000];
 	double itemz[1000];
 
-	PC testPlayer;
+	PC testPlayer, trialPlayer;
 	cin >> testPlayer;
+
+	trialPlayer = testPlayer;
+
+	PC * yolo= &testPlayer;
+
+	cout << "\n" << yolo->getWeight() << "\n" << endl;
 
 	cout << testPlayer.getAlignment();
 

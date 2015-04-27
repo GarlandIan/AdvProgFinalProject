@@ -265,7 +265,7 @@ int Weapon::getRange()
 //Post: returns value of weight
 //Cite: 
 //Author: Zach M,
-int Weapon::setWeight()
+int Weapon::getWeight()
 {
 	return weight;
 }

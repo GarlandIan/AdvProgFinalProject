@@ -67,4 +67,9 @@ class Character
 		string getAlignment();
 		string getRace();
 		string getName();
+
+		virtual int getWeight()
+		{
+			return 0;
+		}
 };

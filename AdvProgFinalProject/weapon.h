@@ -61,7 +61,7 @@ struct Weapon
 	int getCritRange(int i);
 	int getCritType();
 	int getRange();
-	int setWeight();
+	int getWeight();
 
 };
 
