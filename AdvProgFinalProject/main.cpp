@@ -34,6 +34,8 @@ int main(){
 
 	PC testPlayer, trialPlayer;
 	cin >> testPlayer;
+	
+	rollStats(testPlayer);
 
 	trialPlayer = testPlayer;
 

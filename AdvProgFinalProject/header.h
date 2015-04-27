@@ -57,7 +57,7 @@ void generateLoot();
 
 //functions under new character
 int abilityModSet(int n);
-int rollStats();
+int rollStats(PC pc);
 string determineAlignment(int n);
 
 

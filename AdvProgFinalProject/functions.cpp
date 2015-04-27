@@ -1792,40 +1792,48 @@ int roll(int diceNumber)
 //Post: sets value for other variables
 //Cite: 
 //Author: Ian
-int rollStats(){
+int rollStats(PC pc){
 
 	int statRoll = 0, tmp = 0, dice[4];
 
-	for (int i = 0; i < 4; i++){
-		dice[i] = 0;
-	}
-
-	for (int i = 0; i < 4; i++){
-		dice[i] = roll(6);
-	}
-
-	for (int j = 0; j < 4; j++)
+	for  (int i = 0; i < 35;  i++)
 	{
-		for (int i = 0; i < 3; i++)
+		
+
+		for (int i = 0; i < 4; i++){
+			dice[i] = 0;
+		}
+
+		for (int i = 0; i < 4; i++){
+			dice[i] = roll(6);
+		}
+
+		for (int j = 0; j < 4; j++)
 		{
-			if (dice[i + 1] > dice[i])
+			for (int i = 0; i < 3; i++)
 			{
-				tmp = dice[i];
-				dice[i] = dice[i + 1];
-				dice[i + 1] = tmp;
+				if (dice[i + 1] > dice[i])
+				{
+					tmp = dice[i];
+					dice[i] = dice[i + 1];
+					dice[i + 1] = tmp;
+				}
 			}
 		}
-	}
 
-	for (int i = 0; i < 3; i++)
-	{
-		statRoll += dice[i];
-	}
+		for (int i = 0; i < 3; i++)
+		{
+			statRoll += dice[i];
+		}
 
-	cout << "You rolled a " << dice[0] << ", a " << dice[1] << ", a" << dice[2] << ", and a" << dice[3] << endl
-		<< "We will add the three highest rolls and set that as your stat.\n";
+		cout << "You rolled a " << dice[0] << ", a " << dice[1] << ", a" << dice[2] << ", and a" << dice[3] << endl
+			<< "We will add the three highest rolls and set that as your stat.\n";
+
+		pc.setSkills[i] = statRoll;
+	}
 
 	return statRoll;
+	
 }
 
 void operator >>(istream& in, PC pc)
