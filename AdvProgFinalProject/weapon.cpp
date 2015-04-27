@@ -1,6 +1,6 @@
 
 /*
-Author:        Ian Garland, Kody Greeley, Zachary Miller
+Author:         Ian Garland, Kody Greeley, Zachary Miller
 Class:         Advanced Programming- CSI-240-05- Miller Information Commons, Room 308
 Assigment:     Final Project
 Date Assigned: 3/23/15
@@ -27,7 +27,7 @@ Certification of Authenticity:
 //Pre: none
 //Post: makes default constructor
 //Cite: 
-//Author: 
+//Author: Zach M,  
 Weapon::Weapon()
 {
 
@@ -49,7 +49,7 @@ Weapon::Weapon()
 //Pre: none
 //Post: makes simple constructor
 //Cite: 
-//Author: 
+//Author: Zach M,  
 Weapon::Weapon(int critRange[], string d, string e, string n, string s, string t, int cr, int r, int w)
 {
 	damageRoll = d;
@@ -67,7 +67,7 @@ Weapon::Weapon(int critRange[], string d, string e, string n, string s, string t
 //Pre: none
 //Post: makes one instance of Weapon into another
 //Cite: 
-//Author: 
+//Author: Zach M,  
 Weapon::Weapon(const Weapon &w)
 {
 	damageRoll = w.damageRoll;
@@ -84,7 +84,7 @@ Weapon::Weapon(const Weapon &w)
 //Pre: none
 //Post: destruct-inates
 //Cite: 
-//Author: 
+//Author: Zach M,  
 Weapon::~Weapon(){}
 
 
@@ -92,7 +92,7 @@ Weapon::~Weapon(){}
 //Pre: input value
 //Post: sets value of critical range
 //Cite: 
-//Author: 
+//Author: Zach M,  
 void Weapon::setCritRange(int c[])
 {
 	for (int i = 0; i < 2; i++)
@@ -103,7 +103,7 @@ void Weapon::setCritRange(int c[])
 //Pre: input value
 //Post: sets value of crit type
 //Cite: 
-//Author:
+//Author: Zach M,
 void Weapon::setCritType(int cr)
 {
 	 critType= cr;
@@ -113,7 +113,7 @@ void Weapon::setCritType(int cr)
 //Pre: input value
 //Post: sets value of number of Weapons
 //Cite: 
-//Author:
+//Author: Zach M,
 void Weapon::setDamageRoll(string d)
 {
 	damageRoll = d;
@@ -123,7 +123,7 @@ void Weapon::setDamageRoll(string d)
 //Pre: input value
 //Post: sets value of enchant
 //Cite: 
-//Author:
+//Author: Zach M,
 void Weapon::setEnchant(string e)
 {
 	enchant = e;
@@ -133,7 +133,7 @@ void Weapon::setEnchant(string e)
 //Pre: input value
 //Post: sets value of name
 //Cite: 
-//Author:
+//Author: Zach M,
 void Weapon::setName(string n)
 {
 	name = n;
@@ -143,7 +143,7 @@ void Weapon::setName(string n)
 //Pre: input value
 //Post: sets value of range
 //Cite: 
-//Author:
+//Author: Zach M,
 void Weapon::setRange(int r)
 {
 	range = r;
@@ -153,7 +153,7 @@ void Weapon::setRange(int r)
 //Pre: input value
 //Post: sets value of special
 //Cite: 
-//Author:
+//Author: Zach M,
 void Weapon::setSpecial(string s)
 {
 	special = s;
@@ -163,7 +163,7 @@ void Weapon::setSpecial(string s)
 //Pre: input value
 //Post: sets value of weight
 //Cite: 
-//Author:
+//Author: Zach M,
 void Weapon::setWeight(int w)
 {
 	weight = w;
@@ -173,7 +173,7 @@ void Weapon::setWeight(int w)
 //Pre: input value
 //Post: sets value of type
 //Cite: 
-//Author:
+//Author: Zach M,
 void Weapon::setType(string t)
 {
 	type = t;
@@ -183,7 +183,7 @@ void Weapon::setType(string t)
 //Pre: none
 //Post: returns value of damage roll
 //Cite: 
-//Author:
+//Author: Zach M,
 string Weapon::getDamageRoll()
 {
 	return damageRoll;
@@ -193,7 +193,7 @@ string Weapon::getDamageRoll()
 //Pre: none
 //Post: returns value of enchant
 //Cite: 
-//Author:
+//Author: Zach M,
 string Weapon::getEnchant()
 {
 	return enchant;
@@ -203,7 +203,7 @@ string Weapon::getEnchant()
 //Pre: none
 //Post: returns value of name
 //Cite: 
-//Author:
+//Author: Zach M,
 string Weapon::getName()
 {
 	return name;
@@ -213,7 +213,7 @@ string Weapon::getName()
 //Pre: none
 //Post: returns special
 //Cite: 
-//Author:
+//Author: Zach M,
 string Weapon::getSpecial()
 {
 	return special;
@@ -223,7 +223,7 @@ string Weapon::getSpecial()
 //Pre: none
 //Post: returns value of type
 //Cite: 
-//Author:
+//Author: Zach M,
 string Weapon::getType()
 {
 	return type;
@@ -234,7 +234,7 @@ string Weapon::getType()
 //Pre: input value
 //Post: returns value of critical range
 //Cite: 
-//Author:
+//Author: Zach M,
 int Weapon::getCritRange(int i)
 {
 	return critRange[i];
@@ -244,7 +244,7 @@ int Weapon::getCritRange(int i)
 //Pre: none
 //Post: returns value of critical type
 //Cite: 
-//Author:
+//Author: Zach M,
 int Weapon::getCritType()
 {
 	return critType;
@@ -254,7 +254,7 @@ int Weapon::getCritType()
 //Pre: none
 //Post: returns value of range
 //Cite: 
-//Author:
+//Author: Zach M,
 int Weapon::getRange()
 {
 	return range;
@@ -264,7 +264,7 @@ int Weapon::getRange()
 //Pre: none
 //Post: returns value of weight
 //Cite: 
-//Author:
+//Author: Zach M,
 int Weapon::setWeight()
 {
 	return weight;

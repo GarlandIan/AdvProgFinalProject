@@ -25,7 +25,7 @@ Certification of Authenticity:
 //Pre: none
 //Post: makes default constructor
 //Cite: 
-//Author: 
+//Author: Ian
 PC::PC(){
 	
 	level = 0;
@@ -38,7 +38,7 @@ PC::PC(){
 //Pre: none
 //Post: makes simple constructor
 //Cite: 
-//Author: 
+//Author: Ian
 PC::PC(int l, string pc){
 
 	level = l;
@@ -51,7 +51,7 @@ PC::PC(int l, string pc){
 //Pre: none
 //Post: makes one instance of PC upon another
 //Cite: 
-//Author: 
+//Author: Ian
 PC::PC(const PC &pc){
 
 	level = pc.level;
@@ -64,14 +64,14 @@ PC::PC(const PC &pc){
 //Pre: none
 //Post: destruct-inates
 //Cite: 
-//Author: 
+//Author: Ian
 PC::~PC(){}
 
 //Purpose: sets value of level
 //Pre: input value
 //Post: sets value of level
 //Cite: 
-//Author: 
+//Author: Ian
 void PC::setLevel(int l){
 
 	level = l;
@@ -82,7 +82,7 @@ void PC::setLevel(int l){
 //Pre: input value
 //Post: sets value of player class
 //Cite: 
-//Author: 
+//Author: Ian
 void PC::setPClass(string pc){
 
 	playerClass = pc;
@@ -93,7 +93,7 @@ void PC::setPClass(string pc){
 //Pre: none
 //Post: returns value of level
 //Cite: 
-//Author: 
+//Author: Ian
 int PC::getLevel(){
 
 	return level;
@@ -104,7 +104,7 @@ int PC::getLevel(){
 //Pre: none
 //Post: returns value of player class
 //Cite: 
-//Author: 
+//Author: Ian
 string PC::getPClass(){
 
 	return playerClass;

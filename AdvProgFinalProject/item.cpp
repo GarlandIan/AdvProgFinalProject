@@ -1,5 +1,5 @@
 /*
-Author:        Ian Garland, Kody Greeley, Zachary Miller
+Author:: Cody        Ian Garland, Kody Greeley, Zachary Miller
 Class:         Advanced Programming- CSI-240-05- Miller Information Commons, Room 308
 Assigment:     Final Project
 Date Assigned: 3/23/15
@@ -26,7 +26,7 @@ Certification of Authenticity:
 //Pre: none
 //Post: makes default constructor
 //Cite: 
-//Author: 
+//Author:: Cody 
 Item::Item()
 {
 	name = "";
@@ -40,7 +40,7 @@ Item::Item()
 //Pre: none
 //Post: makes simple constructor
 //Cite: 
-//Author: 
+//Author:: Cody 
 Item::Item(string n, string d, double w, int p, int noi)
 {
 	name = n;
@@ -54,7 +54,7 @@ Item::Item(string n, string d, double w, int p, int noi)
 //Pre: none
 //Post: makes one instance of Item into another
 //Cite: 
-//Author: 
+//Author:: Cody 
 Item::Item(const Item &i)
 {
 	name = i.name;
@@ -68,7 +68,7 @@ Item::Item(const Item &i)
 //Pre: none
 //Post: destruct-inates
 //Cite: 
-//Author: 
+//Author:: Cody 
 Item::~Item(){}
 
 
@@ -76,7 +76,7 @@ Item::~Item(){}
 //Pre: input value
 //Post: sets value of description
 //Cite: 
-//Author: 
+//Author:: Cody 
 void Item::setDescription(string d)
 {
 	description = d;
@@ -86,7 +86,7 @@ void Item::setDescription(string d)
 //Pre: input value
 //Post: sets value of name
 //Cite: 
-//Author:
+//Author:: Cody
 void Item::setName(string n)
 {
 	name = n;
@@ -96,7 +96,7 @@ void Item::setName(string n)
 //Pre: input value
 //Post: sets value of number of items
 //Cite: 
-//Author:
+//Author:: Cody
 void Item::setNumOfItem(int noi)
 {
 	numOfItem = noi;
@@ -106,7 +106,7 @@ void Item::setNumOfItem(int noi)
 //Pre: input value
 //Post: sets value of price
 //Cite: 
-//Author:
+//Author:: Cody
 void Item::setPrice(int p)
 {
 	price = p;
@@ -116,7 +116,7 @@ void Item::setPrice(int p)
 //Pre: input value
 //Post: sets value of weight
 //Cite: 
-//Author:
+//Author:: Cody
 void Item::setWeight(double w)
 {
 	weight = w;
@@ -126,7 +126,7 @@ void Item::setWeight(double w)
 //Pre: none
 //Post: returns value of description
 //Cite: 
-//Author:
+//Author:: Cody
 string Item::getDescription()
 {
 	return description;
@@ -136,7 +136,7 @@ string Item::getDescription()
 //Pre: none
 //Post: returns value of name
 //Cite: 
-//Author:
+//Author:: Cody
 string Item::getName()
 {
 	return name;
@@ -146,7 +146,7 @@ string Item::getName()
 //Pre: none
 //Post: returns number of items
 //Cite: 
-//Author:
+//Author:: Cody
 int Item::getNumOfItem()
 {
 	return numOfItem;
@@ -156,7 +156,7 @@ int Item::getNumOfItem()
 //Pre: none
 //Post: returns value of price
 //Cite: 
-//Author:
+//Author:: Cody
 int Item::getPrice()
 {
 	return price;
@@ -166,7 +166,7 @@ int Item::getPrice()
 //Pre: none
 //Post: returns value of weight
 //Cite: 
-//Author:
+//Author:: Cody
 double Item::getWeight()
 {
 	return weight;

@@ -24,7 +24,7 @@ Certification of Authenticity:
 //Pre: none
 //Post: generates default constructer
 //Cite: 
-//Author: 
+//Author: Ian 
 Armor::Armor(){
 	
 	enchant = "";
@@ -43,7 +43,7 @@ Armor::Armor(){
 //Pre: none
 //Post: makes simple constructor
 //Cite: 
-//Author: 
+//Author: Ian 
 Armor::Armor(string e, string ei, string t, int a, int md, int ac, int s, int w, double sfc){
 
 	enchant = e;
@@ -62,7 +62,7 @@ Armor::Armor(string e, string ei, string t, int a, int md, int ac, int s, int w,
 //Pre: none
 //Post: Makes a copy of one instance of armor a and copies it upon anoher
 //Cite: 
-//Author: 
+//Author: Ian 
 Armor::Armor(const Armor &a){
 
 	enchant = a.enchant;
@@ -81,14 +81,14 @@ Armor::Armor(const Armor &a){
 //Pre: none
 //Post: deconstruct-inates
 //Cite: 
-//Author: 
+//Author: Ian 
 Armor::~Armor(){}
 
 //Purpose: Set a value to enchant
 //Pre: input value
 //Post: sets a value to encant
 //Cite: 
-//Author: 
+//Author: Ian 
 void Armor::setEnchant(string e){
 
 	enchant = e;
@@ -99,7 +99,7 @@ void Armor::setEnchant(string e){
 //Pre: input value
 //Post: sets a value to encant info
 //Cite: 
-//Author: 
+//Author: Ian 
 void Armor::setEnchInfo(string ei){
 
 	enchantInfo = ei;
@@ -110,7 +110,7 @@ void Armor::setEnchInfo(string ei){
 //Pre: input value
 //Post: sets a value to type
 //Cite: 
-//Author: 
+//Author: Ian 
 void Armor::setType(string t){
 
 	type = t;
@@ -121,7 +121,7 @@ void Armor::setType(string t){
 //Pre: input value
 //Post: sets a value to accuracyBonus
 //Cite: 
-//Author: 
+//Author: Ian 
 void Armor::setACBon(int a){
 
 	acBonus = a;
@@ -132,7 +132,7 @@ void Armor::setACBon(int a){
 //Pre: input value
 //Post: sets a value to accuracy pentalty
 //Cite: 
-//Author: 
+//Author: Ian 
 void Armor::setACPen(int ac){
 
 	acPenalty = ac;
@@ -143,7 +143,7 @@ void Armor::setACPen(int ac){
 //Pre: input value
 //Post: sets a value to mDexBOnus
 //Cite: 
-//Author: 
+//Author: Ian 
 void Armor::setMDex(int md){
 
 	mDexBonus = md;
@@ -154,7 +154,7 @@ void Armor::setMDex(int md){
 //Pre: input value
 //Post: sets a value to speed
 //Cite: 
-//Author: 
+//Author: Ian 
 void Armor::setSpeed(int s){
 
 	speed = s;
@@ -165,7 +165,7 @@ void Armor::setSpeed(int s){
 //Pre: input value
 //Post: sets a value to weight
 //Cite: 
-//Author: 
+//Author: Ian 
 void Armor::setWeight(int w){
 
 	weight = w;
@@ -176,7 +176,7 @@ void Armor::setWeight(int w){
 //Pre: input value
 //Post: sets a value to spellFailCh
 //Cite: 
-//Author: 
+//Author: Ian 
 void Armor::setSpellFail(double sfc){
 
 	spellFailCh = sfc;
@@ -187,7 +187,7 @@ void Armor::setSpellFail(double sfc){
 //Pre: none
 //Post: gets the value of enchant
 //Cite: 
-//Author: 
+//Author: Ian 
 string Armor::getEnchant(){
 
 	return enchant;
@@ -198,7 +198,7 @@ string Armor::getEnchant(){
 //Pre: none
 //Post: gets the value of enchant info
 //Cite: 
-//Author: 
+//Author: Ian 
 string Armor::getEchInfo(){
 
 	return enchantInfo;
@@ -209,7 +209,7 @@ string Armor::getEchInfo(){
 //Pre: none
 //Post: gets the value of type
 //Cite: 
-//Author: 
+//Author: Ian 
 string Armor::getType(){
 
 	return type;
@@ -220,7 +220,7 @@ string Armor::getType(){
 //Pre: none
 //Post: gets the value of accuracy bonus
 //Cite: 
-//Author: 
+//Author: Ian 
 int Armor::getACBon(){
 
 	return acBonus;
@@ -231,7 +231,7 @@ int Armor::getACBon(){
 //Pre: none
 //Post: gets the value of accuracy penalty
 //Cite: 
-//Author: 
+//Author: Ian 
 int Armor::getACPen(){
 
 	return acPenalty;
@@ -241,7 +241,7 @@ int Armor::getACPen(){
 //Purpose: Retrieve  the value of dexterity bonus
 //Pre: none
 //Post: gets the value of dexterity bonus
-//Author: 
+//Author: Ian 
 int Armor::getMDex(){
 
 	return mDexBonus;
@@ -252,7 +252,7 @@ int Armor::getMDex(){
 //Pre: none
 //Post: gets the value of weight
 //Cite: 
-//Author: 
+//Author: Ian 
 int Armor::getWeight(){
 
 	return weight;
@@ -263,7 +263,7 @@ int Armor::getWeight(){
 //Pre: none
 //Post: gets the value of spellFailch
 //Cite: 
-//Author: 
+//Author: Ian 
 double Armor::getSpellFail(){
 
 	return spellFailCh;

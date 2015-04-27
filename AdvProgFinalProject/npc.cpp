@@ -25,7 +25,7 @@ Certification of Authenticity:
 //Pre: none
 //Post: makes default constructor
 //Cite: 
-//Author: 
+//Author: Ian
 NPC::NPC(){
 
 	CR = 0;
@@ -47,7 +47,7 @@ NPC::NPC(int c){
 //Pre: none
 //Post: makes one instance of NPC upon another
 //Cite: 
-//Author: 
+//Author: Ian
 NPC::NPC(const NPC &n){
 
 	CR = n.CR;
@@ -58,14 +58,14 @@ NPC::NPC(const NPC &n){
 //Pre: none
 //Post: destruct-inates
 //Cite: 
-//Author: 
+//Author: Ian
 NPC::~NPC(){}
 
 //Purpose: gets CR
 //Pre: none
 //Post: returns value of CR
 //Cite: 
-//Author: 
+//Author: Ian
 int NPC::getCR(){
 
 	return CR;
@@ -76,7 +76,7 @@ int NPC::getCR(){
 //Pre: input value
 //Post: sets value of CR
 //Cite: 
-//Author: 
+//Author: Ian
 void NPC::setCR(int c){
 
 	CR = c;
